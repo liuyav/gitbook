@@ -1,0 +1,653 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>六、Nodejs 部署 · web笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="liuyav">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="05-egg.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"zhangjikai/gitbook-use","types":["star","watch","fork"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://liuyav.com" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">Part0 章节介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Web全栈目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part1 Vue</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../vue/01-vue基础.html">
+            
+                <a href="../vue/01-vue基础.html">
+            
+                    
+                    一、Vue 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../vue/02-vue全家桶.html">
+            
+                <a href="../vue/02-vue全家桶.html">
+            
+                    
+                    二、Vue 全家桶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../vue/03-vue组件化.html">
+            
+                <a href="../vue/03-vue组件化.html">
+            
+                    
+                    三、Vue 组件化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../vue/04-vue全家桶原理.html">
+            
+                <a href="../vue/04-vue全家桶原理.html">
+            
+                    
+                    四、Vue 全家桶原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../vue/05-vue原理剖析.html">
+            
+                <a href="../vue/05-vue原理剖析.html">
+            
+                    
+                    五、Vue 原理剖析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../vue/06-vue2源码剖析.html">
+            
+                <a href="../vue/06-vue2源码剖析.html">
+            
+                    
+                    六、Vue2 源码剖析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../vue/07-vue最佳实践.html">
+            
+                <a href="../vue/07-vue最佳实践.html">
+            
+                    
+                    七、Vue 最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../vue/08-vue服务端渲染.html">
+            
+                <a href="../vue/08-vue服务端渲染.html">
+            
+                    
+                    八、Vue 服务端渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part2 React</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../react/01-react基础.html">
+            
+                <a href="../react/01-react基础.html">
+            
+                    
+                    一、React 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../react/02-react组件化.html">
+            
+                <a href="../react/02-react组件化.html">
+            
+                    
+                    二、React 组件化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../react/03-react-redux源码.html">
+            
+                <a href="../react/03-react-redux源码.html">
+            
+                    
+                    三、React-Redux 源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../react/04-react虚拟dom.html">
+            
+                <a href="../react/04-react虚拟dom.html">
+            
+                    
+                    四、React 虚拟 Dom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../react/05-react-hook.html">
+            
+                <a href="../react/05-react-hook.html">
+            
+                    
+                    五、React hook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../react/06-cra项目搭建.html">
+            
+                <a href="../react/06-cra项目搭建.html">
+            
+                    
+                    六、React CRA 项目搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part3 JavaScript</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Part4 Webpack</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Part5 NodeJs</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="01-core.html">
+            
+                <a href="01-core.html">
+            
+                    
+                    一、Nodejs 核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="02-net.html">
+            
+                <a href="02-net.html">
+            
+                    
+                    二、Nodejs 网络通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="03-mongodb.html">
+            
+                <a href="03-mongodb.html">
+            
+                    
+                    三、Nodejs 数据持久化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="04-koa.html">
+            
+                <a href="04-koa.html">
+            
+                    
+                    四、Nodejs koa 框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="05-egg.html">
+            
+                <a href="05-egg.html">
+            
+                    
+                    五、Nodejs egg 框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.6" data-path="06-deploy.html">
+            
+                <a href="06-deploy.html">
+            
+                    
+                    六、Nodejs 部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part6 MinProgram</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Part7 TypeScript</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Part8 前端工具</li>
+        
+        
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >六、Nodejs 部署</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x9AD8;&#x53EF;&#x7528;&#x7684;-node-&#x73AF;&#x5883;"><b>1.1. </b>&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x9AD8;&#x53EF;&#x7528;&#x7684; node &#x73AF;&#x5883;</a></li><li><span class="title-icon "></span><a href="#nodejs-&#x4E2D;&#x5B9E;&#x73B0;&#x7AEF;&#x53E3;&#x91CD;&#x7528;&#x7684;&#x539F;&#x7406;"><b>1.2. </b>nodejs &#x4E2D;&#x5B9E;&#x73B0;&#x7AEF;&#x53E3;&#x91CD;&#x7528;&#x7684;&#x539F;&#x7406;</a></li><li><span class="title-icon "></span><a href="#&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x670D;&#x52A1;&#x5668;"><b>1.3. </b>&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x670D;&#x52A1;&#x5668;</a></li><li><span class="title-icon "></span><a href="#pm2"><b>1.4. </b>pm2</a></li><li><span class="title-icon "></span><a href="#docker&#x547D;&#x4EE4;"><b>1.5. </b>docker&#x547D;&#x4EE4;</a></li><li><span class="title-icon "></span><a href="#dockerfile-&#x6587;&#x4EF6;"><b>1.6. </b>Dockerfile &#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#docker-compose"><b>1.7. </b>Docker-Compose</a></li><li><span class="title-icon "></span><a href="#dockergithub-webhook&#x5B9E;&#x73B0;ci&#x7684;&#x6301;&#x7EED;&#x96C6;&#x6210;"><b>1.8. </b>Docker/Github Webhook&#x5B9E;&#x73B0;CI&#x7684;&#x6301;&#x7EED;&#x96C6;&#x6210;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x9AD8;&#x53EF;&#x7528;&#x7684;-node-&#x73AF;&#x5883;"><a name="&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x9AD8;&#x53EF;&#x7528;&#x7684;-node-&#x73AF;&#x5883;" class="anchor-navigation-ex-anchor" href="#&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x9AD8;&#x53EF;&#x7528;&#x7684;-node-&#x73AF;&#x5883;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x9AD8;&#x53EF;&#x7528;&#x7684; node &#x73AF;&#x5883;</h2>
+<ol>
+<li>&#x6545;&#x969C;&#x6062;&#x590D;</li>
+<li>&#x5145;&#x5206;&#x591A;&#x6838;&#x8D44;&#x6E90;&#x7684;&#x5229;&#x7528;</li>
+<li>&#x591A;&#x8FDB;&#x7A0B;&#x5171;&#x4EAB;&#x7AEF;&#x53E3;<ul>
+<li>cluster &#x6A21;&#x5757;</li>
+<li>fork &#x6A21;&#x5F0F;</li>
+</ul>
+</li>
+</ol>
+<h2 id="nodejs-&#x4E2D;&#x5B9E;&#x73B0;&#x7AEF;&#x53E3;&#x91CD;&#x7528;&#x7684;&#x539F;&#x7406;"><a name="nodejs-&#x4E2D;&#x5B9E;&#x73B0;&#x7AEF;&#x53E3;&#x91CD;&#x7528;&#x7684;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#nodejs-&#x4E2D;&#x5B9E;&#x73B0;&#x7AEF;&#x53E3;&#x91CD;&#x7528;&#x7684;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. nodejs &#x4E2D;&#x5B9E;&#x73B0;&#x7AEF;&#x53E3;&#x91CD;&#x7528;&#x7684;&#x539F;&#x7406;</h2>
+<h2 id="&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x670D;&#x52A1;&#x5668;"><a name="&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x670D;&#x52A1;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x670D;&#x52A1;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x670D;&#x52A1;&#x5668;</h2>
+<ol>
+<li>scp</li>
+<li>git</li>
+<li>deploy&#x63D2;&#x4EF6;</li>
+</ol>
+<h2 id="pm2"><a name="pm2" class="anchor-navigation-ex-anchor" href="#pm2"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. pm2</h2>
+<ol>
+<li>&#x5185;&#x5EFA;&#x8D1F;&#x8F7D;&#x5747;&#x8861;</li>
+<li>&#x7EBF;&#x7A0B;&#x5B88;&#x62A4;</li>
+<li>0&#x79D2;&#x505C;&#x673A;&#x91CD;&#x8F7D;</li>
+</ol>
+<h2 id="docker&#x547D;&#x4EE4;"><a name="docker&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#docker&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. docker&#x547D;&#x4EE4;</h2>
+<p>&#x7B80;&#x5355;&#x542F;&#x52A8;&#xFF1A;docker run -p 80:80 -v $PWD/www:/user/share/nginx/html -d nginx
+&#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#xFF1A;docker ps
+&#x505C;&#x6B62;&#x8FDB;&#x7A0B;&#xFF1A;docker stop pid
+&#x5220;&#x9664;&#x955C;&#x50CF;&#xFF1A;docker rm pid
+&#x62C9;&#x53D6;&#x955C;&#x50CF;&#xFF1A;docker pull nginx
+&#x67E5;&#x770B;&#x955C;&#x50CF;&#xFF1A;docker image nginx
+&#x5236;&#x4F5C;&#x955C;&#x50CF;&#xFF1A;docker build -t myimage .
+&#x542F;&#x52A8;&#x5B9A;&#x5236;&#x955C;&#x50CF;&#xFF1A;docker run -p 80:80 -d myimage</p>
+<h2 id="dockerfile-&#x6587;&#x4EF6;"><a name="dockerfile-&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#dockerfile-&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. Dockerfile &#x6587;&#x4EF6;</h2>
+<h2 id="docker-compose"><a name="docker-compose" class="anchor-navigation-ex-anchor" href="#docker-compose"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. Docker-Compose</h2>
+<p>&#x542F;&#x52A8;&#xFF1A;docker-compose up -d --force-recreate --build
+&#x5173;&#x95ED;&#xFF1A;docker-compose down</p>
+<h2 id="dockergithub-webhook&#x5B9E;&#x73B0;ci&#x7684;&#x6301;&#x7EED;&#x96C6;&#x6210;"><a name="dockergithub-webhook&#x5B9E;&#x73B0;ci&#x7684;&#x6301;&#x7EED;&#x96C6;&#x6210;" class="anchor-navigation-ex-anchor" href="#dockergithub-webhook&#x5B9E;&#x73B0;ci&#x7684;&#x6301;&#x7EED;&#x96C6;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. Docker/Github Webhook&#x5B9E;&#x73B0;CI&#x7684;&#x6301;&#x7EED;&#x96C6;&#x6210;</h2>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">File Modify: 
+2022-03-26 22:37:06
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="05-egg.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 五、Nodejs egg 框架">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"六、Nodejs 部署","level":"6.6","depth":1,"previous":{"title":"五、Nodejs egg 框架","level":"6.5","depth":1,"path":"book/nodejs/05-egg.md","ref":"book/nodejs/05-egg.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search","search-plus","github","-sharing","sharing-plus","tbfed-pagefooter","expandable-chapters-small","advanced-emoji","github-buttons","donate","anchors","anchor-navigation-ex","copy-code-button","theme-comscore","livereload"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{},"disqus":{"useIdentifier":false,"shortName":"gitbook"},"github":{"url":"https://github.com/liuyav/gitbook"},"livereload":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"title":"","button":"赏","wechat":"https://zhangjikai.com/resource/weixin.png","alipay":"https://zhangjikai.com/resource/alipay.png","wechatText":"微信打赏","alipayText":"支付宝打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"theme-comscore":{},"github-buttons":{"repo":"zhangjikai/gitbook-use","types":["star","watch","fork"],"size":"small"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":false,"tbfed-pagefooter":{"copyright":"Copyright &copy zhangjikai.com 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"liuyav","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"web笔记","language":"zh-hans","links":{"sidebar":{"首页":"http://liuyav.com"}},"gitbook":"*","description":"web开发笔记"},"file":{"path":"book/nodejs/06-deploy.md","mtime":"2022-03-26T14:37:06.495Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-27T16:09:18.626Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

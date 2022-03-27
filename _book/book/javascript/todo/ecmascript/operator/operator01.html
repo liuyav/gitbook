@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>一元操作符</title>
+</head>
+<body>
+  <script>
+    var a1 = 2;
+    var a2 = 2;
+    var b = 2;
+    var c = --a1 + b;         // 求值之前被改变
+    var d = a2-- + b;         // 求值之后被改变
+    console.log(c);           // 3
+    console.log(d);           // 4
+    console.log(a1);          // 1
+    console.log(a2);          // 1
+  </script>
+</body>
+</html>

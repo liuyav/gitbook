@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>一元操作符</title>
+</head>
+<body>
+  <script>
+    // 一元加
+    var g1 = +1;              // 放在数字前面不会产生任何影响
+    console.log(typeof g1);   // Number
+    console.log(g1);          // 1
+    var g2 = +'1';            // 放在非数字前面，会调用 Number() 进行类型转化
+    console.log(typeof g2);   // Number
+    console.log(g2)           // 1
+    var g3 = +{                // 放在对象前面，会调用 valueOf() 转换成数字类型
+      valueOf: function() {
+        return true;
+      }
+    }
+    console.log(typeof g3)    // Number
+    console.log(g3);          // 1
+
+    // 一元减
+    var g4 = -1;              // 放在数字前面变成负数
+    console.log(typeof g4);   // Number
+    console.log(g4);          // -1
+    var g5 = -'1';            // 放在非数字前面或者对象上，和一元加执行相同的操作，然后取负数。
+    console.log(typeof g5);   // Number
+    console.log(g5);           // -1;
+  </script>
+</body>
+</html>

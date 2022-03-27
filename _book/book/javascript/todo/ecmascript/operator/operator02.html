@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>一元操作符</title>
+</head>
+<body>
+  <script>
+    // 转换规则一
+    var e1 = '2';                 // 包含有效数字字符串类型
+    var f1 = ++e1;                // 转化数字类型，在进行自增自减
+    console.log(typeof f1);       // Number
+    console.log(f1);              // 3
+
+    // 转换规则二
+    var e2 = 'a';                 // 不包含有效数字字符串类型
+    var f2 = ++e2;                // 转成 NaN
+    console.log(typeof f2);       // Number
+    console.log(f2);              // NaN
+
+    // 转换规则三
+    var e3 = false;               // 包含布尔值false
+    var f3 = ++e3;
+    console.log(typeof f3)        // Number
+    console.log(f3)               // 1
+
+    // 转换规则四
+    var e4 = {                    // 包含一个对象，调用对象的 valueOf() 方法，应用上述规则。
+      valueOf: function() {
+        return '1';
+      }
+    };
+    var f4 = ++e4;
+    console.log(f4)               // 2
+  </script>
+</body>
+</html>

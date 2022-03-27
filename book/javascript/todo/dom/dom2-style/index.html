@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h2>dom2-style围绕定义样式的三种方式提供了一套API</h2>
+  <ul>
+    <li>
+      style属性：
+      <ol>
+        <li>style对象是CSSStyleDeclaration的实例，包含通过style 特性指定的样式，但不包括外部与内嵌样式</li>
+        <li>对于分割属性转化成驼峰形式</li>
+        <li>cssText包含style中所有样式信息，可以被重写</li>
+        <li>float在样式对象上对应的属性应该是cssFloat，IE下是styleFloat</li>
+        <li>
+          属性方法：
+          <ul>
+            <li>cssText：访问style中的css代码</li>
+            <li>length：css属性数量</li>
+            <li>parentRule：表示CSS信息的CSSRule对象</li>
+            <li>getPropertyCSSValue(attr)：返回包含给定attr对应的CSSValue对象</li>
+            <li>getPropertyPriority(attr)：如果给定属性使用了 !important 则返回该字符，否则为空</li>
+            <li>getPropertyValue(attr)：返回给定attr的字符串值</li>
+            <li>removeProperty(attr)：从样式中删除给定属性</li>
+            <li>item(index)：返回给定位置css属性名称</li>
+            <li>setProperty(attr, value, priority)：给给定属性设置相应的值</li>
+          </ul>
+        </li>
+      </ol>
+    </li>
+    <li>
+      link标签/style标签：
+      <ol>
+        <li>link标签HTMLLinkElement类型，style标签是HTMLStyleElement类型，都表示样式表，用CSSStyleSheet类型表示更通用一些</li>
+        <li>
+          继承自StyleSheet类型，继承属性如下：
+          <ul>
+            <li>disabled</li>
+            <li>href</li>
+            <li>media</li>
+            <li>ownNode</li>
+            <li>parentStyleSheet</li>
+            <li>title</li>
+            <li>type</li>
+            <li>
+              cssRules表示的是样式表中的每一条规则，IE下为rules
+              <ul>
+                <li>cssText不同于style.cssText，不可写</li>
+                <li>parentRule</li>
+                <li>parentStyleSheet</li>
+                <li>selectorText</li>
+                <li>style：一个CSSStyleDeclaration对象</li>
+                <li>type</li>
+              </ul>
+            </li>
+            <li>ownerRule</li>
+            <li>deleteRule(index),IE下为removeRule(index)</li>
+            <li>insertRule(rule, index)，IE下为addRule(slelcore, rule, index)</li>
+          </ul>
+        </li>
+        <li>获取样式表集合：（styleSheets属性、取得link标签下的sheet/styleSheet属性）</li>
+      </ol>
+    </li>
+    <li>获取最终样式（document.defaultView.getComputedStyle()、currentStyle）</li>
+
+  </ul>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>位操作符</title>
+</head>
+<body>
+  <script>
+    // 第一个为对象，返回第二个
+    console.log( {} && 1 );
+    console.log( {} && 'aaa' );
+    console.log( {} && false );
+    console.log( {} && null );
+    console.log( {} && undefined );
+    console.log( {} && [] );
+
+    // 第二个为对象，只有第一个为true才会返回第二个
+    console.log( true && {} );
+
+    // 有一个操作数为 null、undefined、NaN 则返回他们自己
+    console.log( null && 1 );
+    console.log( 1 && undefined );
+    console.log( NaN && undefined );
+  </script>
+</body>
+</html>

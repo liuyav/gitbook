@@ -1,0 +1,789 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>一、Vue 基础 · web笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="liuyav">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02-vue全家桶.html" />
+    
+    
+    <link rel="prev" href="../../" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"zhangjikai/gitbook-use","types":["star","watch","fork"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://liuyav.com" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">Part0 章节介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Web全栈目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part1 Vue</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="01-vue基础.html">
+            
+                <a href="01-vue基础.html">
+            
+                    
+                    一、Vue 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-vue全家桶.html">
+            
+                <a href="02-vue全家桶.html">
+            
+                    
+                    二、Vue 全家桶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03-vue组件化.html">
+            
+                <a href="03-vue组件化.html">
+            
+                    
+                    三、Vue 组件化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04-vue全家桶原理.html">
+            
+                <a href="04-vue全家桶原理.html">
+            
+                    
+                    四、Vue 全家桶原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05-vue原理剖析.html">
+            
+                <a href="05-vue原理剖析.html">
+            
+                    
+                    五、Vue 原理剖析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06-vue2源码剖析.html">
+            
+                <a href="06-vue2源码剖析.html">
+            
+                    
+                    六、Vue2 源码剖析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07-vue最佳实践.html">
+            
+                <a href="07-vue最佳实践.html">
+            
+                    
+                    七、Vue 最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08-vue服务端渲染.html">
+            
+                <a href="08-vue服务端渲染.html">
+            
+                    
+                    八、Vue 服务端渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part2 React</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../react/01-react基础.html">
+            
+                <a href="../react/01-react基础.html">
+            
+                    
+                    一、React 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../react/02-react组件化.html">
+            
+                <a href="../react/02-react组件化.html">
+            
+                    
+                    二、React 组件化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../react/03-react-redux源码.html">
+            
+                <a href="../react/03-react-redux源码.html">
+            
+                    
+                    三、React-Redux 源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../react/04-react虚拟dom.html">
+            
+                <a href="../react/04-react虚拟dom.html">
+            
+                    
+                    四、React 虚拟 Dom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../react/05-react-hook.html">
+            
+                <a href="../react/05-react-hook.html">
+            
+                    
+                    五、React hook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../react/06-cra项目搭建.html">
+            
+                <a href="../react/06-cra项目搭建.html">
+            
+                    
+                    六、React CRA 项目搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part3 JavaScript</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Part4 Webpack</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Part5 NodeJs</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../nodejs/01-core.html">
+            
+                <a href="../nodejs/01-core.html">
+            
+                    
+                    一、Nodejs 核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../nodejs/02-net.html">
+            
+                <a href="../nodejs/02-net.html">
+            
+                    
+                    二、Nodejs 网络通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../nodejs/03-mongodb.html">
+            
+                <a href="../nodejs/03-mongodb.html">
+            
+                    
+                    三、Nodejs 数据持久化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../nodejs/04-koa.html">
+            
+                <a href="../nodejs/04-koa.html">
+            
+                    
+                    四、Nodejs koa 框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../nodejs/05-egg.html">
+            
+                <a href="../nodejs/05-egg.html">
+            
+                    
+                    五、Nodejs egg 框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../nodejs/06-deploy.html">
+            
+                <a href="../nodejs/06-deploy.html">
+            
+                    
+                    六、Nodejs 部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part6 MinProgram</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Part7 TypeScript</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Part8 前端工具</li>
+        
+        
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >一、Vue 基础</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x6A21;&#x677F;&#x8BED;&#x6CD5;"><b>1. </b>&#x6A21;&#x677F;&#x8BED;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x63D2;&#x503C;"><b>1.1. </b>&#x63D2;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x6307;&#x4EE4;"><b>1.2. </b>&#x6307;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5E38;&#x7528;&#x6307;&#x4EE4;"><b>1.2.1. </b>&#x5E38;&#x7528;&#x6307;&#x4EE4;</a></li><li><span class="title-icon "></span><a href="#&#x6307;&#x4EE4;&#x7F29;&#x5199;"><b>1.2.2. </b>&#x6307;&#x4EE4;&#x7F29;&#x5199;</a></li><li><span class="title-icon "></span><a href="#&#x4FEE;&#x9970;&#x7B26;"><b>1.2.3. </b>&#x4FEE;&#x9970;&#x7B26;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x6837;&#x5F0F;&#x7ED1;&#x5B9A;"><b>2. </b>&#x6837;&#x5F0F;&#x7ED1;&#x5B9A;</a></li><ul><li><span class="title-icon "></span><a href="#class--style-&#x7ED1;&#x5B9A;"><b>2.1. </b>class / style &#x7ED1;&#x5B9A;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5BF9;&#x8C61;&#x5199;&#x6CD5;"><b>2.1.1. </b>&#x5BF9;&#x8C61;&#x5199;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x6570;&#x7EC4;&#x5199;&#x6CD5;"><b>2.1.2. </b>&#x6570;&#x7EC4;&#x5199;&#x6CD5;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x548C;&#x4FA6;&#x542C;&#x5668;"><b>3. </b>&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x548C;&#x4FA6;&#x542C;&#x5668;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8BA1;&#x7B97;&#x5C5E;&#x6027;"><b>3.1. </b>&#x8BA1;&#x7B97;&#x5C5E;&#x6027;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7279;&#x70B9;"><b>3.1.1. </b>&#x7279;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#setter-&#x5C5E;&#x6027;"><b>3.1.2. </b>setter &#x5C5E;&#x6027;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4FA6;&#x542C;&#x5668;"><b>3.2. </b>&#x4FA6;&#x542C;&#x5668;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7528;&#x6CD5;"><b>3.2.1. </b>&#x7528;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x5E94;&#x7528;&#x573A;&#x666F;"><b>3.2.2. </b>&#x5E94;&#x7528;&#x573A;&#x666F;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x751F;&#x547D;&#x5468;&#x671F;"><b>4. </b>&#x751F;&#x547D;&#x5468;&#x671F;</a></li><li><span class="title-icon "></span><a href="#&#x7EC4;&#x4EF6;&#x5316;"><b>5. </b>&#x7EC4;&#x4EF6;&#x5316;</a></li><li><span class="title-icon "></span><a href="#&#x5FC5;&#x4F1A;-api-&#x76D8;&#x70B9;"><b>6. </b>&#x5FC5;&#x4F1A; API &#x76D8;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#&#x52A8;&#x753B;-transition"><b>7. </b>&#x52A8;&#x753B; transition</a></li><li><span class="title-icon "></span><a href="#&#x53EF;&#x590D;&#x7528;&#x6027;"><b>8. </b>&#x53EF;&#x590D;&#x7528;&#x6027;</a></li></ul></div><a href="#&#x6A21;&#x677F;&#x8BED;&#x6CD5;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6A21;&#x677F;&#x8BED;&#x6CD5;"><a name="&#x6A21;&#x677F;&#x8BED;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x6A21;&#x677F;&#x8BED;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x6A21;&#x677F;&#x8BED;&#x6CD5;</h1>
+<h2 id="&#x63D2;&#x503C;"><a name="&#x63D2;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x63D2;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x63D2;&#x503C;</h2>
+<p>&#x4F7F;&#x7528;&#x201C;Mustache&#x201D;&#x8BED;&#x6CD5; (&#x53CC;&#x5927;&#x62EC;&#x53F7;) &#x7684;&#x6587;&#x672C;&#x63D2;&#x503C; </p>
+<h2 id="&#x6307;&#x4EE4;"><a name="&#x6307;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x6307;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x6307;&#x4EE4;</h2>
+<h3 id="&#x5E38;&#x7528;&#x6307;&#x4EE4;"><a name="&#x5E38;&#x7528;&#x6307;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x6307;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. &#x5E38;&#x7528;&#x6307;&#x4EE4;</h3>
+<ul>
+<li>v-text &#x6587;&#x672C;&#x63D2;&#x503C;&#xFF0C;&#x5728;&#x6570;&#x636E;&#x672A;&#x6E32;&#x67D3;&#x65F6;&#x5019;&#x4E0D;&#x4F1A;&#x5C55;&#x793A;&#x51FA;&#x6765;&#xFF08;&#x53EF;&#x4EE5;&#x7528;&#x4F5C;&#x754C;&#x9762;&#x4F18;&#x5316;&#xFF09;</li>
+<li>v-once &#x53EA;&#x6E32;&#x67D3;&#x4E00;&#x6B21;&#x7684;&#x6587;&#x672C;&#x63D2;&#x503C;</li>
+<li>v-bind &#x7ED1;&#x5B9A;&#x5C5E;&#x6027;</li>
+<li>v-html &#x6E32;&#x67D3; html</li>
+<li>v-for &#x5FAA;&#x73AF;&#xFF08;key&#x6307;&#x5B9A;&#x552F;&#x4E00;&#x6027;&#xFF0C;&#x7528;&#x4E8E;dom diff&#xFF1B;&#x6BD4; v-if &#x4F18;&#x5148;&#x7EA7;&#x9AD8;&#xFF0C;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x65F6;&#x5019;&#x8BF7;&#x5D4C;&#x5957;&#x4F7F;&#x7528;&#xFF09;</li>
+<li>v-model &#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#xFF08;&#x7528;&#x5728;&#x8F93;&#x5165;&#x63A7;&#x4EF6;&#x4E0A;&#xFF0C;&#x8BED;&#x6CD5;&#x7CD6;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x7ED1;&#x5B9A;&#x4E86; value &#x503C;&#x548C;&#x5B9E;&#x73B0;&#x4E86; @input &#x4E8B;&#x4EF6;&#xFF09;</li>
+<li>v-if / v-show</li>
+<li>v-else / v-else-if</li>
+<li>...</li>
+</ul>
+<h3 id="&#x6307;&#x4EE4;&#x7F29;&#x5199;"><a name="&#x6307;&#x4EE4;&#x7F29;&#x5199;" class="anchor-navigation-ex-anchor" href="#&#x6307;&#x4EE4;&#x7F29;&#x5199;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. &#x6307;&#x4EE4;&#x7F29;&#x5199;</h3>
+<ul>
+<li>v-on &#x7F29;&#x5199; @</li>
+<li>v-bind &#x7F29;&#x5199; :</li>
+</ul>
+<h3 id="&#x4FEE;&#x9970;&#x7B26;"><a name="&#x4FEE;&#x9970;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x9970;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. &#x4FEE;&#x9970;&#x7B26;</h3>
+<ul>
+<li><code>.stop</code> - &#x8C03;&#x7528; <code>event.stopPropagation()</code>&#x3002;</li>
+<li><code>.prevent</code> - &#x8C03;&#x7528; <code>event.preventDefault()</code>&#x3002;</li>
+<li><code>.capture</code> - &#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#x4FA6;&#x542C;&#x5668;&#x65F6;&#x4F7F;&#x7528; capture &#x6A21;&#x5F0F;&#x3002;</li>
+<li><code>.sync</code>  &#x76F8;&#x5F53;&#x4E8E; <code>$emit(&quot;update:var&quot;, params)</code> </li>
+<li><code>.self</code> - &#x53EA;&#x5F53;&#x4E8B;&#x4EF6;&#x662F;&#x4ECE;&#x4FA6;&#x542C;&#x5668;&#x7ED1;&#x5B9A;&#x7684;&#x5143;&#x7D20;&#x672C;&#x8EAB;&#x89E6;&#x53D1;&#x65F6;&#x624D;&#x89E6;&#x53D1;&#x56DE;&#x8C03;&#x3002;</li>
+<li><code>.{keyCode | keyAlias}</code> - &#x53EA;&#x5F53;&#x4E8B;&#x4EF6;&#x662F;&#x4ECE;&#x7279;&#x5B9A;&#x952E;&#x89E6;&#x53D1;&#x65F6;&#x624D;&#x89E6;&#x53D1;&#x56DE;&#x8C03;&#x3002;</li>
+<li><code>.native</code> - &#x76D1;&#x542C;&#x7EC4;&#x4EF6;&#x6839;&#x5143;&#x7D20;&#x7684;&#x539F;&#x751F;&#x4E8B;&#x4EF6;&#x3002;</li>
+<li><code>.once</code> - &#x53EA;&#x89E6;&#x53D1;&#x4E00;&#x6B21;&#x56DE;&#x8C03;&#x3002;</li>
+<li><code>.left</code> - (2.2.0) &#x53EA;&#x5F53;&#x70B9;&#x51FB;&#x9F20;&#x6807;&#x5DE6;&#x952E;&#x65F6;&#x89E6;&#x53D1;&#x3002;</li>
+<li><code>.right</code> - (2.2.0) &#x53EA;&#x5F53;&#x70B9;&#x51FB;&#x9F20;&#x6807;&#x53F3;&#x952E;&#x65F6;&#x89E6;&#x53D1;&#x3002;</li>
+<li><code>.middle</code> - (2.2.0) &#x53EA;&#x5F53;&#x70B9;&#x51FB;&#x9F20;&#x6807;&#x4E2D;&#x952E;&#x65F6;&#x89E6;&#x53D1;&#x3002;</li>
+<li><code>.passive</code> - (2.3.0) &#x4EE5; <code>{ passive: true }</code> &#x6A21;&#x5F0F;&#x6DFB;&#x52A0;&#x4FA6;&#x542C;&#x5668;</li>
+</ul>
+<h1 id="&#x6837;&#x5F0F;&#x7ED1;&#x5B9A;"><a name="&#x6837;&#x5F0F;&#x7ED1;&#x5B9A;" class="anchor-navigation-ex-anchor" href="#&#x6837;&#x5F0F;&#x7ED1;&#x5B9A;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x6837;&#x5F0F;&#x7ED1;&#x5B9A;</h1>
+<h2 id="class--style-&#x7ED1;&#x5B9A;"><a name="class--style-&#x7ED1;&#x5B9A;" class="anchor-navigation-ex-anchor" href="#class--style-&#x7ED1;&#x5B9A;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. class / style &#x7ED1;&#x5B9A;</h2>
+<h3 id="&#x5BF9;&#x8C61;&#x5199;&#x6CD5;"><a name="&#x5BF9;&#x8C61;&#x5199;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x5BF9;&#x8C61;&#x5199;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1. &#x5BF9;&#x8C61;&#x5199;&#x6CD5;</h3>
+<p>&#x5BF9;&#x8C61; key &#x4E3A;&#x8981;&#x7ED1;&#x5B9A;&#x7684;&#x7C7B;&#x540D; / &#x5C5E;&#x6027;&#x540D;&#xFF0C;&#x5BF9;&#x8C61; value &#x8868;&#x8FBE;&#x5F0F;&#x786E;&#x5B9A;&#x662F;&#x5426;&#x7ED1;&#x5B9A; &#xFF0C;&#x4F8B;&#x5B50;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>v-bind:class=&quot;{active: var === val}&quot;</li>
+<li>v-bind:style=&quot;{backgroundColor: var === val ? &apos;red&apos; : &apos;&apos;}&quot;</li>
+</ul>
+<h3 id="&#x6570;&#x7EC4;&#x5199;&#x6CD5;"><a name="&#x6570;&#x7EC4;&#x5199;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x7EC4;&#x5199;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.2. &#x6570;&#x7EC4;&#x5199;&#x6CD5;</h3>
+<ul>
+<li>&#x76F4;&#x63A5;&#x5E94;&#x7528;&#x4E00;&#x4E2A; class &#x5217;&#x8868; v-bind:class=&quot;[activeClass, errorClass]&quot;</li>
+<li>&#x6839;&#x636E;&#x6761;&#x4EF6;&#x5207;&#x6362;&#x5217;&#x8868;&#x4E2D;&#x7684; class<ul>
+<li>&#x4E09;&#x5143;&#x8868;&#x8FBE;&#x5F0F; v-bind:class=&quot;[isActive ? activeClass : &apos;&apos;, errorClass]&quot;</li>
+<li>&#x6570;&#x7EC4;&#x4E2D;&#x4F7F;&#x7528;&#x5BF9;&#x8C61;&#x5199;&#x6CD5;  v-bind:class=&quot;[{ active: isActive }, errorClass]&quot;</li>
+</ul>
+</li>
+</ul>
+<h1 id="&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x548C;&#x4FA6;&#x542C;&#x5668;"><a name="&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x548C;&#x4FA6;&#x542C;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x548C;&#x4FA6;&#x542C;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x548C;&#x4FA6;&#x542C;&#x5668;</h1>
+<h2 id="&#x8BA1;&#x7B97;&#x5C5E;&#x6027;"><a name="&#x8BA1;&#x7B97;&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x8BA1;&#x7B97;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. &#x8BA1;&#x7B97;&#x5C5E;&#x6027;</h2>
+<h3 id="&#x7279;&#x70B9;"><a name="&#x7279;&#x70B9;" class="anchor-navigation-ex-anchor" href="#&#x7279;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.1. &#x7279;&#x70B9;</h3>
+<p>&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x7F13;&#x5B58;&#xFF0C;&#x5F53;&#x6570;&#x636E;&#x672A;&#x53D8;&#x5316;&#x65F6;&#x5019;&#xFF0C;&#x4E0D;&#x4F1A;&#x6267;&#x884C;</p>
+<h3 id="setter-&#x5C5E;&#x6027;"><a name="setter-&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#setter-&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.2. setter &#x5C5E;&#x6027;</h3>
+<p>&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x9ED8;&#x8BA4;&#x53EA;&#x6709; getter &#x5C5E;&#x6027;&#xFF0C;&#x4E0D;&#x8FC7;&#x5728;&#x9700;&#x8981;&#x65F6;&#x5019;&#x4E5F;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E; setter &#x5C5E;&#x6027;</p>
+<pre><code class="lang-js">computed: {
+  fullName: {
+    <span class="hljs-comment">// getter</span>
+    get: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.firstName + <span class="hljs-string">&apos; &apos;</span> + <span class="hljs-keyword">this</span>.lastName
+    },
+    <span class="hljs-comment">// setter</span>
+    set: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">newValue</span>) </span>{
+      <span class="hljs-keyword">var</span> names = newValue.split(<span class="hljs-string">&apos; &apos;</span>)
+      <span class="hljs-keyword">this</span>.firstName = names[<span class="hljs-number">0</span>]
+      <span class="hljs-keyword">this</span>.lastName = names[names.length - <span class="hljs-number">1</span>]
+    }
+  }
+}
+</code></pre>
+<h2 id="&#x4FA6;&#x542C;&#x5668;"><a name="&#x4FA6;&#x542C;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x4FA6;&#x542C;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. &#x4FA6;&#x542C;&#x5668;</h2>
+<h3 id="&#x7528;&#x6CD5;"><a name="&#x7528;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.1. &#x7528;&#x6CD5;</h3>
+<ul>
+<li>&#x51FD;&#x6570;&#x5199;&#x6CD5;</li>
+<li>&#x5E26;&#x9009;&#x9879;&#x5199;&#x6CD5;&#xFF0C;&#x9009;&#x9879;&#x5982;&#x4E0B;&#xFF1A;<ul>
+<li>immediate</li>
+<li>deep</li>
+<li>handler</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x5E94;&#x7528;&#x573A;&#x666F;"><a name="&#x5E94;&#x7528;&#x573A;&#x666F;" class="anchor-navigation-ex-anchor" href="#&#x5E94;&#x7528;&#x573A;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.2. &#x5E94;&#x7528;&#x573A;&#x666F;</h3>
+<ul>
+<li>&#x4FA6;&#x542C;&#x8DEF;&#x7531;&#x53D8;&#x5316; $route</li>
+</ul>
+<h1 id="&#x751F;&#x547D;&#x5468;&#x671F;"><a name="&#x751F;&#x547D;&#x5468;&#x671F;" class="anchor-navigation-ex-anchor" href="#&#x751F;&#x547D;&#x5468;&#x671F;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x751F;&#x547D;&#x5468;&#x671F;</h1>
+<p>beforeCreate()</p>
+<p>created()</p>
+<ul>
+<li>&#x7EC4;&#x4EF6;&#x5B9E;&#x4F8B;&#x5DF2;&#x521B;&#x5EFA;&#xFF0C;dom &#x672A;&#x6302;&#x8F7D;</li>
+</ul>
+<p>beforeMount()</p>
+<p>mounted()</p>
+<p>beforeUpdate()</p>
+<p>updated()</p>
+<p>beforeDestroy()</p>
+<p>destroy()</p>
+<h1 id="&#x7EC4;&#x4EF6;&#x5316;"><a name="&#x7EC4;&#x4EF6;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x7EC4;&#x4EF6;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x7EC4;&#x4EF6;&#x5316;</h1>
+<p>&#x7EC4;&#x4EF6; props &#x9009;&#x9879;</p>
+<ul>
+<li>type&#x3001;default&#x3001;required</li>
+</ul>
+<p>&#x7EC4;&#x4EF6;&#x5206;&#x7C7B;</p>
+<ul>
+<li>&#x6709;&#x72B6;&#x6001;&#x7EC4;&#x4EF6;</li>
+<li>funtional &#x7EC4;&#x4EF6;&#xFF08;&#x65E0;&#x72B6;&#x6001;&#x7EC4;&#x4EF6;&#xFF09;</li>
+<li>abstract &#x7EC4;&#x4EF6;&#xFF0C;&#x65E0;&#x754C;&#x9762;&#xFF0C;&#x67D0;&#x4E00;&#x529F;&#x80FD;</li>
+</ul>
+<p>&#x7EC4;&#x4EF6;&#x5B9A;&#x4E49;&#x5C3D;&#x91CF;&#x65E0;&#x72B6;&#x6001;&#x5316;&#xFF0C;&#x8FD9;&#x6837;&#x7EC4;&#x4EF6;&#x53EF;&#x4EE5;&#x66F4;&#x52A0;&#x5185;&#x805A;</p>
+<p>&#x7EC4;&#x4EF6;&#x4F18;&#x5316;&#xFF1A;is&#x3001;keep-alive&#x3001;&#x5F02;&#x6B65;&#x7EC4;&#x4EF6;</p>
+<p>&#x63D2;&#x69FD;</p>
+<ul>
+<li>&#x533F;&#x540D;&#x63D2;&#x69FD;</li>
+<li>&#x5177;&#x540D;&#x63D2;&#x69FD;</li>
+<li>&#x4F5C;&#x7528;&#x57DF;&#x63D2;&#x69FD;</li>
+</ul>
+<h1 id="&#x5FC5;&#x4F1A;-api-&#x76D8;&#x70B9;"><a name="&#x5FC5;&#x4F1A;-api-&#x76D8;&#x70B9;" class="anchor-navigation-ex-anchor" href="#&#x5FC5;&#x4F1A;-api-&#x76D8;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>6. &#x5FC5;&#x4F1A; API &#x76D8;&#x70B9;</h1>
+<p>Vue.set() / delete() vm.$set() / delete()</p>
+<p>vm.$on() / vm.$emit()</p>
+<p>&#x4E8B;&#x4EF6;&#x603B;&#x7EBF; Vue.prototype.$bus = new Vue()</p>
+<p>&#x7EC4;&#x4EF6;&#x6216;&#x5143;&#x7D20;&#x5F15;&#x7528;&#xFF08;ref &#x548C; vm.$refs&#xFF09;</p>
+<h1 id="&#x52A8;&#x753B;-transition"><a name="&#x52A8;&#x753B;-transition" class="anchor-navigation-ex-anchor" href="#&#x52A8;&#x753B;-transition"><i class="fa fa-link" aria-hidden="true"></i></a>7. &#x52A8;&#x753B; transition</h1>
+<p>&#x6307;&#x5B9A; name</p>
+<ul>
+<li>&#x52A8;&#x753B;&#x6837;&#x5F0F;&#x683C;&#x5F0F; [name]-[enter/leave]-[status]</li>
+<li>&#x52A8;&#x753B;&#x987A;&#x5E8F;<ol>
+<li>[name]-enter</li>
+<li>[name]-enter-active</li>
+<li>[name]-enter-to&#xFF08;&#x53EF;&#x4EE5;&#x4E0D;&#x5B9A;&#x4E49;&#xFF09;</li>
+<li>[name]-leave&#xFF08;&#x53EF;&#x4EE5;&#x4E0D;&#x5B9A;&#x4E49;&#xFF09;</li>
+<li>[name]-leave-active</li>
+<li>[name]-leave-to</li>
+</ol>
+</li>
+</ul>
+<p>css &#x52A8;&#x753B;&#x5E93;&#xFF08;&#x901A;&#x8FC7;&#x81EA;&#x5B9A;&#x4E49;&#x8FC7;&#x6E21;&#x7C7B;&#x540D;&#x7ED3;&#x5408; css &#x52A8;&#x753B;&#x5E93;&#x5B9E;&#x73B0;&#xFF09;</p>
+<ul>
+<li>&#x52A8;&#x753B;&#x6837;&#x5F0F;&#x683C;&#x5F0F; [enter/leave]-[status]-class = &quot;className&quot;</li>
+<li>&#x53EA;&#x9700;&#x8981;&#x6307;&#x5B9A; active &#x65F6;&#x5019;&#x7684;&#x6837;&#x5F0F;</li>
+</ul>
+<p>js &#x52A8;&#x753B;&#x94A9;&#x5B50;&#xFF08;&#x6307;&#x5B9A; name&#xFF0C;&#x5B9A;&#x4E49;&#x8FC7;&#x6E21;&#x52A8;&#x753B;&#xFF09;</p>
+<ul>
+<li>&#x94A9;&#x5B50;&#x5217;&#x8868;<ul>
+<li>@before-enter</li>
+<li>@enter</li>
+<li>@after-enter</li>
+<li>@enter-cancel</li>
+<li>@before-leave</li>
+<li>@leave</li>
+<li>@after-leave</li>
+<li>@leave-cancel</li>
+</ul>
+</li>
+</ul>
+<p>&#x7EAF; js &#x65B9;&#x6848;&#xFF08;&#x8FC7;&#x6E21;&#x52A8;&#x753B;&#x4EA4;&#x7ED9;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#x53BB;&#x505A;&#xFF09;</p>
+<p>&#x5217;&#x8868;&#x8FC7;&#x6E21; transition-group</p>
+<h1 id="&#x53EF;&#x590D;&#x7528;&#x6027;"><a name="&#x53EF;&#x590D;&#x7528;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x53EF;&#x590D;&#x7528;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>8. &#x53EF;&#x590D;&#x7528;&#x6027;</h1>
+<p>&#x8FC7;&#x6EE4;&#x5668;</p>
+<p>&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;</p>
+<p>&#x6E32;&#x67D3;&#x51FD;&#x6570;</p>
+<p>&#x51FD;&#x6570;&#x5F0F;&#x7EC4;&#x4EF6;</p>
+<p>&#x6DF7;&#x5165;</p>
+<p>&#x63D2;&#x4EF6;</p>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">File Modify: 
+2022-03-28 00:02:36
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../../" class="navigation navigation-prev " aria-label="Previous page: Web全栈目录">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02-vue全家桶.html" class="navigation navigation-next " aria-label="Next page: 二、Vue 全家桶">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"一、Vue 基础","level":"2.1","depth":1,"next":{"title":"二、Vue 全家桶","level":"2.2","depth":1,"path":"book/vue/02-vue全家桶.md","ref":"book/vue/02-vue全家桶.md","articles":[]},"previous":{"title":"Web全栈目录","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search","search-plus","github","-sharing","sharing-plus","tbfed-pagefooter","expandable-chapters-small","advanced-emoji","github-buttons","donate","anchors","anchor-navigation-ex","copy-code-button","theme-comscore","livereload"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{},"disqus":{"useIdentifier":false,"shortName":"gitbook"},"github":{"url":"https://github.com/liuyav/gitbook"},"livereload":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"title":"","button":"赏","wechat":"https://zhangjikai.com/resource/weixin.png","alipay":"https://zhangjikai.com/resource/alipay.png","wechatText":"微信打赏","alipayText":"支付宝打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"theme-comscore":{},"github-buttons":{"repo":"zhangjikai/gitbook-use","types":["star","watch","fork"],"size":"small"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":false,"tbfed-pagefooter":{"copyright":"Copyright &copy zhangjikai.com 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"liuyav","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"web笔记","language":"zh-hans","links":{"sidebar":{"首页":"http://liuyav.com"}},"gitbook":"*","description":"web开发笔记"},"file":{"path":"book/vue/01-vue基础.md","mtime":"2022-03-27T16:02:36.505Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-27T16:09:18.626Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h2>dom1-core 描述的是层次化的节点树，允许开发人员修改、添加、移除页面的某一部分</h2>
+  <ul>
+    <li>
+      节点层次：
+      <ol>
+        <li>成树状向下分布</li>
+        <li>在html中根节点只有一个为html，在xml中任何节点都可以成为根节点</li>
+      </ol>
+    </li>
+    <li>
+      节点类型：
+      <ol>
+        <li>nodeType一共12种，常用类型4种（el：1、attr：2、text：3、node：8、doc：9）</li>
+        <ul>
+          <li>
+            Element类型：
+            <ul>
+              <li>HTMLElement类型继承于Element类型，html元素是HTMLElement类型的一个实例</li>
+              <li>html元素属性（id、title、lang、dir、className、attributes）</li>
+              <li>html元素方法（getAttribute()、setAttribute()、removeAttribute()、createElement()）</li>
+            </ul>
+          </li>
+          <li>
+            Document类型：
+            <ul>
+              <li>HTMLDocument类型继承于Document类型，document对象是HTMLDocument类型的一个实例</li>
+              <li>document对象属性（documentElement、body、doctype、title、url、domain、referrer）</li>
+              <li>document对象查找元素方法（getElementByID()、getElementsByTagName()、getElementsByName()）,返回一个HTMLCollection对象</li>
+              <li>document对象特殊集合（anchors、forms、images、links）</li>
+              <li>document对象写入方法（write()、writeIn()、open()、close()）</li>
+            </ul>
+          </li>
+        </ul>
+        <li>nodeName始终为标签名</li>
+        <li>nodeName始终为空</li>
+        <li>
+          节点间层级关系
+          <ul>
+            <li>childNodes表示节点的子节点，nodeList对象</li>
+            <li>parentNode表示节点的唯一父节点</li>
+            <li>previousSibling/nextSibling表示节点的上一个/下一个兄弟节点</li>
+            <li>firstChild/lastChild表示节点的第一个/最后一个子节点</li>
+            <li>所有节点都有一个属性为ownerDocument，指向整个文档的文档节点（html）</li>
+            <li>hasChildNodes()方法在节点树大于0时候会返回ture</li>
+          </ul>
+        </li>
+      </ol>
+    </li>
+    <li>
+      操作节点：
+      <ol>
+        <li>appendChild()方法向一个childNodes列表末尾添加一个节点，返回新增节点</li>
+        <li>insertBefore()方法向一个childNodes列表中得某一节点前添加一个节点，返回新增节点</li>
+        <li>replaceChild()方法，替换节点，返回被替换的节点</li>
+        <li>removeChild()方法，移除节点，返回被移除的节点</li>
+        <li>cloneNode()复制节点，执行深复制时候，参数为true</li>
+        <li>normalize()处理文档树中的文本节点</li>
+      </ol> 
+    </li>
+  </ul>
+</body>
+</html>

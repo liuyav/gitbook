@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>操作符</title>
+</head>
+<body>
+  <script>
+    /*
+      三. 布尔擦作符
+    */
+    /*
+      1. 逻辑非
+      2. 逻辑与
+      3. 逻辑或
+    */
+
+    /*
+      四、乘性操作符
+        分类：
+          - 乘法
+          - 除法
+          - 求模
+        乘性操作符在操作数为非数字情况下会执行自动的类型转换，调用Number()函数
+    */
+    /*
+      1. 乘法
+        - 都是数字的情况下，直接计算，超出ecma数值范围内，则为 Infinity 或者 -Infinity
+        - 有一个操作数为NaN，返回NaN
+        - 有一个操作数不是数值时候，就调用Number()将其转为数值
+        - Infinity 与 0 相乘，结果为NaN
+        - Infinity 与 非0 相乘，结果为 Infinity 或 -Infinity
+        - Infinity 与 Infinity 相乘，返回 Infinity
+      2. 除法
+        - 都是数字的情况下，直接计算，超出ecma数值范围内，则为 Infinity 或者 -Infinity
+        - 有一个操作数为NaN，返回NaN
+        - Infinity 与 Infinity 相除，返回 NaN
+        - 0 与 0 相除，结果为NaN
+        - 非0的有限数被0除，结果为 Infinity 或 -Infinity
+        - Infinity 被任何非0值除，结果为 Infinity 或 -Infinity
+    */
+  </script>
+</body>
+</html>

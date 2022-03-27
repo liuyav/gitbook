@@ -1,0 +1,38 @@
+{
+  "name": "gitbook",
+  "version": "1.0.0",
+  "description": "平时学习的笔记",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook-plugin-advanced-emoji": "^0.2.2",
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
+    "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-copy-code-button": "^0.0.2",
+    "gitbook-plugin-disqus": "^0.1.0",
+    "gitbook-plugin-donate": "^1.0.2",
+    "gitbook-plugin-expandable-chapters-small": "^0.1.7",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-github-buttons": "^3.0.0",
+    "gitbook-plugin-search-plus": "^1.0.3",
+    "gitbook-plugin-sharing-plus": "^0.0.2",
+    "gitbook-plugin-tbfed-pagefooter": "^0.0.1",
+    "gitbook-plugin-theme-comscore": "0.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "gitbook serve",
+    "build": "gitbook build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuyav/gitbook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuyav/gitbook/issues"
+  },
+  "homepage": "https://github.com/liuyav/gitbook#readme"
+}
