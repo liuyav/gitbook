@@ -7,4 +7,4 @@ git pull origin dev
 npm config set registry http://registry.npm.taobao.org/ && npm i && npm run build
 
 
-docker run -p 8000:80 -v $PWD/www:/usr/share/nginx/html -d nginx
+docker run -p 8000:80 -v $PWD/_book:/usr/share/nginx/html -d nginx
