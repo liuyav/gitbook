@@ -38,7 +38,7 @@
 //		将虚拟机 /usr/share/nginx/html 目录映射到当前目录下的 www 下
 //		将虚拟机的 80 端口映射到本机的 8000 端口
 //		加上 -d 以后台模式启动进程，并且打印一个 uuid
-docker run -p 8000:80 -v $PWD/www:/user/share/nginx/html -d nginx
+docker run -p 8000:80 -v $PWD/www:/usr/share/nginx/html -d nginx
 
 // 查看进程（加上 -a 查询所有的容器，包括没有启动的）
 docker ps -a
