@@ -27,7 +27,7 @@ handler.on('push', function (event) {
   // 分支判断
   if (event.payload.ref === 'refs/heads/dev') {
     run_cmd('sh', ['./deploy-dev.sh'], (text) => {
-      console.log("text", text)
+      console.log(text)
     })
   }
 })
