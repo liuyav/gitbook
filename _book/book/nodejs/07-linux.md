@@ -1,13 +1,11 @@
-# 一、申请云服务器
+# linux 常用命令
 
-- 购买 ubuntu 服务器
-- 生成公钥 ssh-keygen -t rsa
-- 上传公钥到服务器 ssh-copy-id root@[serverName]
-- 登录 ssh root@[serverName]
+查看文件：cat filename
 
+写入文件：echo "hello" >>> www/index.html
 
 
-# 二、linux
+# linux
 
 复制文件 scp local_folder remote_username@remote_ip:remote_folder
 

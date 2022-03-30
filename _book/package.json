@@ -16,7 +16,8 @@
     "gitbook-plugin-search-plus": "^1.0.3",
     "gitbook-plugin-sharing-plus": "^0.0.2",
     "gitbook-plugin-tbfed-pagefooter": "^0.0.1",
-    "gitbook-plugin-theme-comscore": "0.0.3"
+    "gitbook-plugin-theme-comscore": "0.0.3",
+    "github-webhook-handler": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {

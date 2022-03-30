@@ -89,6 +89,7 @@
       "wechatText": "微信打赏"
     },
     "anchor-navigation-ex": {
+      "showLevel": false,
       "isShowTocTitleIcon": true,
       "tocLevel1Icon": "fa fa-hand-o-right",
       "tocLevel2Icon": "fa fa-hand-o-right",
