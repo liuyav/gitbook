@@ -24,7 +24,6 @@ handler.on('push', function (event) {
     event.payload.repository.name,
     event.payload.ref);
   // 分支判断
-  console.log(event.payload)
   if (event.payload.ref === 'refs/heads/dev') {
     run_cmd('sh', ['./deploy-dev.sh'], (text) => {
       console.log(text)
