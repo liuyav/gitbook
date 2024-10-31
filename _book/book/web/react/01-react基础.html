@@ -1,0 +1,1421 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>一、React 基础 · web笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="liuyav">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02-react组件化.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"zhangjikai/gitbook-use","types":["star","watch","fork"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://liuyav.com" target="_blank" class="custom-link">个人首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">Part1 目录说明与写作规范</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    目录说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../RULE.html">
+            
+                <a href="../../../RULE.html">
+            
+                    
+                    写作规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part2 Web全栈文档</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../vue/">
+            
+                <a href="../vue/">
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../vue/01-vue基础.html">
+            
+                <a href="../vue/01-vue基础.html">
+            
+                    
+                    一、Vue 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../vue/02-vue全家桶.html">
+            
+                <a href="../vue/02-vue全家桶.html">
+            
+                    
+                    二、Vue 全家桶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../vue/03-vue组件化.html">
+            
+                <a href="../vue/03-vue组件化.html">
+            
+                    
+                    三、Vue 组件化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../vue/04-vue全家桶原理.html">
+            
+                <a href="../vue/04-vue全家桶原理.html">
+            
+                    
+                    四、Vue 全家桶原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../vue/05-vue原理剖析.html">
+            
+                <a href="../vue/05-vue原理剖析.html">
+            
+                    
+                    五、Vue 原理剖析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../vue/06-vue2源码剖析.html">
+            
+                <a href="../vue/06-vue2源码剖析.html">
+            
+                    
+                    六、Vue2 源码剖析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../vue/07-vue最佳实践.html">
+            
+                <a href="../vue/07-vue最佳实践.html">
+            
+                    
+                    七、Vue 最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../vue/08-vue服务端渲染.html">
+            
+                <a href="../vue/08-vue服务端渲染.html">
+            
+                    
+                    八、Vue 服务端渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.2.1" data-path="01-react基础.html">
+            
+                <a href="01-react基础.html">
+            
+                    
+                    一、React 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="02-react组件化.html">
+            
+                <a href="02-react组件化.html">
+            
+                    
+                    二、React 组件化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="03-react-redux源码.html">
+            
+                <a href="03-react-redux源码.html">
+            
+                    
+                    三、React-Redux 源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="04-react虚拟dom.html">
+            
+                <a href="04-react虚拟dom.html">
+            
+                    
+                    四、React 虚拟 Dom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="05-react-hook.html">
+            
+                <a href="05-react-hook.html">
+            
+                    
+                    五、React hook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="06-cra项目搭建.html">
+            
+                <a href="06-cra项目搭建.html">
+            
+                    
+                    六、React CRA 项目搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="07-性能优化.html">
+            
+                <a href="07-性能优化.html">
+            
+                    
+                    七、React性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../javascript/">
+            
+                <a href="../javascript/">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../javascript/01-语法基础.html">
+            
+                <a href="../javascript/01-语法基础.html">
+            
+                    
+                    一、语法基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../javascript/02-操作符.html">
+            
+                <a href="../javascript/02-操作符.html">
+            
+                    
+                    二、操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../webpack/">
+            
+                <a href="../webpack/">
+            
+                    
+                    Webpack
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../webpack/01-webpack基础.html">
+            
+                <a href="../webpack/01-webpack基础.html">
+            
+                    
+                    一、webpack基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../webpack/02-webpack常用配置.html">
+            
+                <a href="../webpack/02-webpack常用配置.html">
+            
+                    
+                    二、webpack常用配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../webpack/03-webpack优化配置.html">
+            
+                <a href="../webpack/03-webpack优化配置.html">
+            
+                    
+                    三、webpack优化配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../webpack/04-webpack打包原理.html">
+            
+                <a href="../webpack/04-webpack打包原理.html">
+            
+                    
+                    四、webpack打包原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../webpack/05-webpack自定义.html">
+            
+                <a href="../webpack/05-webpack自定义.html">
+            
+                    
+                    五、webpack自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../nodejs/">
+            
+                <a href="../nodejs/">
+            
+                    
+                    NodeJs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../nodejs/01-core.html">
+            
+                <a href="../nodejs/01-core.html">
+            
+                    
+                    一、Nodejs 核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../nodejs/02-net.html">
+            
+                <a href="../nodejs/02-net.html">
+            
+                    
+                    二、Nodejs 网络通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../nodejs/03-mongodb.html">
+            
+                <a href="../nodejs/03-mongodb.html">
+            
+                    
+                    三、Nodejs 数据持久化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.4" data-path="../nodejs/04-koa.html">
+            
+                <a href="../nodejs/04-koa.html">
+            
+                    
+                    四、Nodejs koa 框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.5" data-path="../nodejs/05-egg.html">
+            
+                <a href="../nodejs/05-egg.html">
+            
+                    
+                    五、Nodejs egg 框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.6" data-path="../nodejs/06-deploy.html">
+            
+                <a href="../nodejs/06-deploy.html">
+            
+                    
+                    六、Nodejs 部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.7" data-path="../nodejs/07-linux.html">
+            
+                <a href="../nodejs/07-linux.html">
+            
+                    
+                    七、Linux常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../typescript/">
+            
+                <a href="../typescript/">
+            
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../数据结构与算法/">
+            
+                <a href="../数据结构与算法/">
+            
+                    
+                    数据结构与算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="../数据结构与算法/01-链表.html">
+            
+                <a href="../数据结构与算法/01-链表.html">
+            
+                    
+                    一、链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="../数据结构与算法/02-堆栈.html">
+            
+                <a href="../数据结构与算法/02-堆栈.html">
+            
+                    
+                    二、堆栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.3" data-path="../数据结构与算法/03-队列.html">
+            
+                <a href="../数据结构与算法/03-队列.html">
+            
+                    
+                    三、队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" >
+            
+                <span>
+            
+                    
+                    MinProgram
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" >
+            
+                <span>
+            
+                    
+                    New Vue
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" >
+            
+                <span>
+            
+                    
+                    New React
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part3 软件与开发工具</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../tool/git/">
+            
+                <a href="../../tool/git/">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../tool/git/01-git基本使用.html">
+            
+                <a href="../../tool/git/01-git基本使用.html">
+            
+                    
+                    一、Git基本使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../tool/git/02-git进阶使用.html">
+            
+                <a href="../../tool/git/02-git进阶使用.html">
+            
+                    
+                    二、Git进阶使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../tool/git/03-git工作流.html">
+            
+                <a href="../../tool/git/03-git工作流.html">
+            
+                    
+                    三、Git工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../tool/01-gitbook.html">
+            
+                <a href="../../tool/01-gitbook.html">
+            
+                    
+                    GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../tool/02-typora.html">
+            
+                <a href="../../tool/02-typora.html">
+            
+                    
+                    Typora
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >一、React 基础</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x4E00;&#x3001;react&#x3001;react-dom&#x4F5C;&#x7528;"><b></b>&#x4E00;&#x3001;react&#x3001;react-dom&#x4F5C;&#x7528;</a></li><ul><li><span class="title-icon "></span><a href="#1&#x3001;react-&#x8D1F;&#x8D23;&#x63CF;&#x8FF0;&#x7279;&#x6027;&#xFF0C;&#x63D0;&#x4F9B;react-api"><b></b>1&#x3001;react &#x8D1F;&#x8D23;&#x63CF;&#x8FF0;&#x7279;&#x6027;&#xFF0C;&#x63D0;&#x4F9B;React API</a></li><li><span class="title-icon "></span><a href="#2&#x3001;react-dom-&#x4F5C;&#x7528;"><b></b>2&#x3001;react-dom &#x4F5C;&#x7528;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E8C;&#x3001;jsx-&#x8BED;&#x6CD5;"><b></b>&#x4E8C;&#x3001;JSX &#x8BED;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#1&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#xFF0C;&#x53D8;&#x91CF;&#x7528;--&#x5305;&#x88F9;"><b></b>1&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#xFF0C;&#x53D8;&#x91CF;&#x7528; {} &#x5305;&#x88F9;</a></li><li><span class="title-icon "></span><a href="#2&#x3001;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x51FD;&#x6570;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><b></b>2&#x3001;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x51FD;&#x6570;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#xFF0C;&#x7528; {} &#x5305;&#x88F9;</a></li><li><span class="title-icon "></span><a href="#3&#x3001;html&#x6807;&#x7B7E;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><b></b>3&#x3001;html&#x6807;&#x7B7E;&#xFF0C;&#x7528; {} &#x5305;&#x88F9;</a></li><li><span class="title-icon "></span><a href="#4&#x3001;&#x6761;&#x4EF6;&#x8BED;&#x53E5;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><b></b>4&#x3001;&#x6761;&#x4EF6;&#x8BED;&#x53E5;&#xFF0C;&#x7528; {} &#x5305;&#x88F9;</a></li><li><span class="title-icon "></span><a href="#5&#x3001;&#x6570;&#x7EC4;&#x5FAA;&#x73AF;&#x8F93;&#x51FA;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><b></b>5&#x3001;&#x6570;&#x7EC4;&#x5FAA;&#x73AF;&#x8F93;&#x51FA;&#xFF0C;&#x7528; {} &#x5305;&#x88F9;</a></li><li><span class="title-icon "></span><a href="#6&#x3001;&#x4F5C;&#x4E3A;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><b></b>6&#x3001;&#x4F5C;&#x4E3A;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x7528; {} &#x5305;&#x88F9;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E09;&#x3001;&#x4E24;&#x79CD;&#x7EC4;&#x4EF6;"><b></b>&#x4E09;&#x3001;&#x4E24;&#x79CD;&#x7EC4;&#x4EF6;</a></li><ul><li><span class="title-icon "></span><a href="#1&#x3001;class&#x7EC4;&#x4EF6;"><b></b>1&#x3001;class&#x7EC4;&#x4EF6;</a></li><ul><li><span class="title-icon "></span><a href="#&#xFF08;1&#xFF09;&#x62E5;&#x6709;&#x72B6;&#x6001;"><b></b>&#xFF08;1&#xFF09;&#x62E5;&#x6709;&#x72B6;&#x6001;</a></li><li><span class="title-icon "></span><a href="#&#xFF08;2&#xFF09;&#x62E5;&#x6709;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;"><b></b>&#xFF08;2&#xFF09;&#x62E5;&#x6709;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;</a></li></ul><li><span class="title-icon "></span><a href="#2&#x3001;function-&#x7EC4;&#x4EF6;"><b></b>2&#x3001;function &#x7EC4;&#x4EF6;</a></li><ul><li><span class="title-icon "></span><a href="#&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x72B6;&#x6001;&#x4F7F;&#x7528;-usestate"><b></b>&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x72B6;&#x6001;&#x4F7F;&#x7528; useState</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x56DB;&#x3001;setstate-&#x7684;&#x7528;&#x6CD5;"><b></b>&#x56DB;&#x3001;setState &#x7684;&#x7528;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#1&#x3001;&#x5408;&#x6210;&#x4E8B;&#x4EF6;&#x3001;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x662F;&#x5F02;&#x6B65;&#x7684;&#xFF08;&#x6279;&#x91CF;&#x66F4;&#x65B0;&#x3001;&#x4F18;&#x5316;&#x6027;&#x80FD;&#x7684;&#x76EE;&#x7684;&#xFF09;"><b></b>1&#x3001;&#x5408;&#x6210;&#x4E8B;&#x4EF6;&#x3001;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x662F;&#x5F02;&#x6B65;&#x7684;&#xFF08;&#x6279;&#x91CF;&#x66F4;&#x65B0;&#x3001;&#x4F18;&#x5316;&#x6027;&#x80FD;&#x7684;&#x76EE;&#x7684;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#2&#x3001;&#x5728;-settimeout--&#x539F;&#x751F;&#x4E8B;&#x4EF6;--setstate&#x7B2C;&#x4E8C;&#x4E2A;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#x4E2D;-&#x8BBF;&#x95EE;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF1A;"><b></b>2&#x3001;&#x5728; setTimeout / &#x539F;&#x751F;&#x4E8B;&#x4EF6; / setState&#x7B2C;&#x4E8C;&#x4E2A;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#x4E2D; &#x8BBF;&#x95EE;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF1A;</a></li><li><span class="title-icon "></span><a href="#3&#x3001;state-&#x66F4;&#x65B0;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#xFF1A;"><b></b>3&#x3001;state &#x66F4;&#x65B0;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#xFF1A;</a></li><ul><li><span class="title-icon "></span><a href="#&#xFF08;1&#xFF09;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x5BF9;&#x4E00;&#x4E2A;-state-&#x8FDB;&#x884C;&#x591A;&#x6B21;&#x66F4;&#x65B0;&#xFF0C;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#x66F4;&#x65B0;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x6309;&#x7167;&#x540E;&#x9762;&#x7684;"><b></b>&#xFF08;1&#xFF09;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x5BF9;&#x4E00;&#x4E2A; state &#x8FDB;&#x884C;&#x591A;&#x6B21;&#x66F4;&#x65B0;&#xFF0C;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#x66F4;&#x65B0;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x6309;&#x7167;&#x540E;&#x9762;&#x7684;</a></li><li><span class="title-icon "></span><a href="#&#xFF08;2&#xFF09;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x60F3;&#x8981;&#x5B9E;&#x73B0;&#x94FE;&#x5F0F;&#x66F4;&#x65B0;&#xFF0C;setstate-&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5199;&#x6210;&#x51FD;&#x6570;"><b></b>&#xFF08;2&#xFF09;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x60F3;&#x8981;&#x5B9E;&#x73B0;&#x94FE;&#x5F0F;&#x66F4;&#x65B0;&#xFF0C;setState &#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5199;&#x6210;&#x51FD;&#x6570;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x4E94;&#x3001;react-&#x751F;&#x547D;&#x5468;&#x671F;"><b></b>&#x4E94;&#x3001;React &#x751F;&#x547D;&#x5468;&#x671F;</a></li><ul><li><span class="title-icon "></span><a href="#1&#x3001;v-163-&#x4E4B;&#x524D;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x6267;&#x884C;&#x987A;&#x5E8F;"><b></b>1&#x3001;v 16.3 &#x4E4B;&#x524D;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x6267;&#x884C;&#x987A;&#x5E8F;</a></li><ul><li><span class="title-icon "></span><a href="#&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#x6D41;&#x7A0B;"><b></b>&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#x6D41;&#x7A0B;</a></li><li><span class="title-icon "></span><a href="#&#xFF08;2&#xFF09;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#x6D41;&#x7A0B;"><b></b>&#xFF08;2&#xFF09;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#x6D41;&#x7A0B;</a></li></ul><li><span class="title-icon "></span><a href="#2&#x3001;&#x4E00;&#x4E9B;&#x751F;&#x547D;&#x5468;&#x671F;&#x88AB;&#x5E9F;&#x9664;"><b></b>2&#x3001;&#x4E00;&#x4E9B;&#x751F;&#x547D;&#x5468;&#x671F;&#x88AB;&#x5E9F;&#x9664;</a></li><ul><li><span class="title-icon "></span><a href="#&#xFF08;1&#xFF09;&#x5E9F;&#x9664;-componentwillmount&#x3001;componentwillreceiveprops&#x3001;componentwillupdate"><b></b>&#xFF08;1&#xFF09;&#x5E9F;&#x9664; componentWillMount&#x3001;componentWillReceiveProps&#x3001;componentWillUpdate</a></li><li><span class="title-icon "></span><a href="#&#xFF08;2&#xFF09;componentwillreceivepropsnextprops"><b></b>&#xFF08;2&#xFF09;componentWillReceiveProps(nextProps)</a></li><li><span class="title-icon "></span><a href="#&#xFF08;3&#xFF09;&#x5982;&#x9700;&#x4F7F;&#x7528;&#x6DFB;&#x52A0;-unsafe-&#x524D;&#x7F00;"><b></b>&#xFF08;3&#xFF09;&#x5982;&#x9700;&#x4F7F;&#x7528;&#x6DFB;&#x52A0; UNSAFE_ &#x524D;&#x7F00;</a></li></ul><li><span class="title-icon "></span><a href="#3&#x3001;v164-&#x53CA;&#x4E4B;&#x540E;&#x5F15;&#x5165;&#x4E24;&#x4E2A;&#x65B0;&#x751F;&#x547D;&#x5468;&#x671F;"><b></b>3&#x3001;v16.4 &#x53CA;&#x4E4B;&#x540E;&#x5F15;&#x5165;&#x4E24;&#x4E2A;&#x65B0;&#x751F;&#x547D;&#x5468;&#x671F;</a></li><ul><li><span class="title-icon "></span><a href="#&#xFF08;1&#xFF09;static-getderivedstatefrompropsprops-state"><b></b>&#xFF08;1&#xFF09;static getDerivedStateFromProps(props, state)</a></li><li><span class="title-icon "></span><a href="#&#xFF08;2&#xFF09;getsnapshotbeforeupdateprevprops-prevstate-&#x5728;&#x66F4;&#x65B0;&#x4E4B;&#x524D;&#x7684;&#x7F29;&#x5F71;"><b></b>&#xFF08;2&#xFF09;getSnapshotBeforeUpdate(prevProps, prevState) &#x5728;&#x66F4;&#x65B0;&#x4E4B;&#x524D;&#x7684;&#x7F29;&#x5F71;</a></li></ul><li><span class="title-icon "></span><a href="#4&#x3001;v164-&#x751F;&#x547D;&#x5468;&#x671F;&#x6267;&#x884C;&#x987A;&#x5E8F;"><b></b>4&#x3001;v16.4 &#x751F;&#x547D;&#x5468;&#x671F;&#x6267;&#x884C;&#x987A;&#x5E8F;</a></li><ul><li><span class="title-icon "></span><a href="#&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#xFF1A;"><b></b>&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#xFF1A;</a></li><li><span class="title-icon "></span><a href="#&#xFF08;2&#xFF09;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#xFF1A;"><b></b>&#xFF08;2&#xFF09;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#xFF1A;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x516D;&#x3001;redux"><b></b>&#x516D;&#x3001;Redux</a></li><ul><li><span class="title-icon "></span><a href="#1&#x3001;&#x5B89;&#x88C5;&#x4F9D;&#x8D56;"><b></b>1&#x3001;&#x5B89;&#x88C5;&#x4F9D;&#x8D56;</a></li><li><span class="title-icon "></span><a href="#2&#x3001;&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1A;"><b></b>2&#x3001;&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1A;</a></li><ul><li><span class="title-icon "></span><a href="#&#xFF08;1&#xFF09;&#x5927;&#x91CF;&#x3001;&#x968F;&#x65F6;&#x95F4;&#x53D8;&#x5316;&#x7684;&#x6570;&#x636E;"><b></b>&#xFF08;1&#xFF09;&#x5927;&#x91CF;&#x3001;&#x968F;&#x65F6;&#x95F4;&#x53D8;&#x5316;&#x7684;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#&#xFF08;2&#xFF09;state-&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x53EF;&#x9760;&#x7684;&#x6570;&#x636E;&#x6765;&#x6E90;"><b></b>&#xFF08;2&#xFF09;state &#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x53EF;&#x9760;&#x7684;&#x6570;&#x636E;&#x6765;&#x6E90;</a></li><li><span class="title-icon "></span><a href="#&#xFF08;3&#xFF09;state-&#x653E;&#x5728;&#x6700;&#x9876;&#x5C42;&#x7EC4;&#x4EF6;&#x4E2D;&#x5DF2;&#x7ECF;&#x65E0;&#x6CD5;&#x6EE1;&#x8DB3;&#x9700;&#x8981;&#x4E86;"><b></b>&#xFF08;3&#xFF09;state &#x653E;&#x5728;&#x6700;&#x9876;&#x5C42;&#x7EC4;&#x4EF6;&#x4E2D;&#x5DF2;&#x7ECF;&#x65E0;&#x6CD5;&#x6EE1;&#x8DB3;&#x9700;&#x8981;&#x4E86;</a></li><li><span class="title-icon "></span><a href="#&#xFF08;4&#xFF09;&#x67D0;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#x9700;&#x8981;&#x5171;&#x4EAB;"><b></b>&#xFF08;4&#xFF09;&#x67D0;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#x9700;&#x8981;&#x5171;&#x4EAB;</a></li></ul><li><span class="title-icon "></span><a href="#3&#x3001;redux-&#x66F4;&#x65B0;&#x6D41;&#x7A0B;&#xFF1A;"><b></b>3&#x3001;redux &#x66F4;&#x65B0;&#x6D41;&#x7A0B;&#xFF1A;</a></li><ul><li><span class="title-icon "></span><a href="#&#xFF08;1&#xFF09;&#x89C6;&#x56FE;&#x9700;&#x8981;&#x66F4;&#x65B0;&#xFF0C;&#x8C03;&#x7528;-redux-&#x7684;-dispatch-&#x65B9;&#x6CD5;&#x5E76;&#x6307;&#x5B9A;&#x6D3E;&#x53D1;&#x52A8;&#x4F5C;&#x901A;&#x77E5;-reducer"><b></b>&#xFF08;1&#xFF09;&#x89C6;&#x56FE;&#x9700;&#x8981;&#x66F4;&#x65B0;&#xFF0C;&#x8C03;&#x7528; redux &#x7684; dispatch &#x65B9;&#x6CD5;&#x5E76;&#x6307;&#x5B9A;&#x6D3E;&#x53D1;&#x52A8;&#x4F5C;&#x901A;&#x77E5; Reducer</a></li><li><span class="title-icon "></span><a href="#&#xFF08;2&#xFF09;reducer-&#x62FF;&#x5230;&#x5F53;&#x524D;-state-&#x4E0E;-dispath-&#x65B9;&#x6CD5;&#x6D3E;&#x53D1;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;-newstate"><b></b>&#xFF08;2&#xFF09;Reducer &#x62FF;&#x5230;&#x5F53;&#x524D; state &#x4E0E; dispath &#x65B9;&#x6CD5;&#x6D3E;&#x53D1;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; newState</a></li><li><span class="title-icon "></span><a href="#&#xFF08;3&#xFF09;store-&#x4E2D;&#x6570;&#x636E;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x901A;&#x8FC7;subscribe&#x65B9;&#x6CD5;&#x53D8;&#x66F4;&#x8BA2;&#x9605;&#x901A;&#x77E5;&#x9875;&#x9762;&#x66F4;&#x65B0;"><b></b>&#xFF08;3&#xFF09;store &#x4E2D;&#x6570;&#x636E;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x901A;&#x8FC7;subscribe()&#x65B9;&#x6CD5;&#x53D8;&#x66F4;&#x8BA2;&#x9605;&#x901A;&#x77E5;&#x9875;&#x9762;&#x66F4;&#x65B0;</a></li></ul><li><span class="title-icon "></span><a href="#4&#x3001;&#x5177;&#x4F53;&#x5B9E;&#x73B0;"><b></b>4&#x3001;&#x5177;&#x4F53;&#x5B9E;&#x73B0;</a></li><ul><li><span class="title-icon "></span><a href="#&#xFF08;1&#xFF09;&#x5B9A;&#x4E49;-store-&#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF08;-redux-&#x4E2D;&#x5BFC;&#x51FA;-createstore-&#x65B9;&#x6CD5;&#xFF09;"><b></b>&#xFF08;1&#xFF09;&#x5B9A;&#x4E49; store &#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF08; redux &#x4E2D;&#x5BFC;&#x51FA; createStore &#x65B9;&#x6CD5;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#xFF08;2&#xFF09;&#x5B9A;&#x4E49;-reducer-&#xFF08;&#x5B9A;&#x4E49;state&#x521D;&#x59CB;&#x5316;&#x4FEE;&#x6539;&#x89C4;&#x5219;&#xFF09;"><b></b>&#xFF08;2&#xFF09;&#x5B9A;&#x4E49; reducer &#xFF08;&#x5B9A;&#x4E49;state&#x521D;&#x59CB;&#x5316;&#x4FEE;&#x6539;&#x89C4;&#x5219;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#xFF08;3&#xFF09;storegetstate-&#x83B7;&#x53D6;&#x72B6;&#x6001;"><b></b>&#xFF08;3&#xFF09;store.getState() &#x83B7;&#x53D6;&#x72B6;&#x6001;</a></li><li><span class="title-icon "></span><a href="#&#xFF08;4&#xFF09;storedispatch-&#x4F20;&#x9012;action-&#x66F4;&#x65B0;&#x72B6;&#x6001;&#x3001;"><b></b>&#xFF08;4&#xFF09;store.dispatch() &#x4F20;&#x9012;action &#x66F4;&#x65B0;&#x72B6;&#x6001;&#x3001;</a></li><li><span class="title-icon "></span><a href="#&#xFF08;5&#xFF09;storesubscribe-&#x7EC4;&#x4EF6;&#x6E32;&#x67D3;&#x5B8C;&#x6BD5;&#x540E;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x5728;&#x56DE;&#x8C03;&#x4E2D;&#x8C03;&#x7528;-forceupdate-&#x65B9;&#x6CD5;&#x5F3A;&#x5236;&#x5237;&#x65B0;"><b></b>&#xFF08;5&#xFF09;store.subscribe() &#x7EC4;&#x4EF6;&#x6E32;&#x67D3;&#x5B8C;&#x6BD5;&#x540E;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x5728;&#x56DE;&#x8C03;&#x4E2D;&#x8C03;&#x7528; forceUpdate &#x65B9;&#x6CD5;&#x5F3A;&#x5236;&#x5237;&#x65B0;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x4E03;&#x3001;react-redux"><b></b>&#x4E03;&#x3001;React-redux</a></li><ul><li><span class="title-icon "></span><a href="#1&#x3001;&#x4F9D;&#x8D56;&#x5B89;&#x88C5;"><b></b>1&#x3001;&#x4F9D;&#x8D56;&#x5B89;&#x88C5;</a></li><li><span class="title-icon "></span><a href="#2&#x3001;&#x66F4;&#x4E3A;&#x4FBF;&#x6377;&#x7684;-react-&#x7248;&#x672C;&#x7684;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x3002;"><b></b>2&#x3001;&#x66F4;&#x4E3A;&#x4FBF;&#x6377;&#x7684; react &#x7248;&#x672C;&#x7684;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x3002;</a></li><ul><li><span class="title-icon "></span><a href="#&#xFF08;1&#xFF09;provide-&#x4E3A;&#x540E;&#x4EE3;&#x7EC4;&#x4EF6;&#x63D0;&#x4F9B;store&#xFF08;&#x597D;&#x5904;&#xFF1A;&#x540E;&#x4EE3;&#x9875;&#x9762;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x5F15;&#x5165;store&#xFF09;"><b></b>&#xFF08;1&#xFF09;Provide &#x4E3A;&#x540E;&#x4EE3;&#x7EC4;&#x4EF6;&#x63D0;&#x4F9B;store&#xFF08;&#x597D;&#x5904;&#xFF1A;&#x540E;&#x4EE3;&#x9875;&#x9762;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x5F15;&#x5165;store&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#xFF08;2&#xFF09;connect-&#x4E3A;&#x7EC4;&#x4EF6;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x548C;&#x53D8;&#x66F4;&#x65B9;&#x6CD5;"><b></b>&#xFF08;2&#xFF09;connect &#x4E3A;&#x7EC4;&#x4EF6;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x548C;&#x53D8;&#x66F4;&#x65B9;&#x6CD5;</a></li></ul><li><span class="title-icon "></span><a href="#3&#x3001;&#x4F7F;&#x7528;reducer"><b></b>3&#x3001;&#x4F7F;&#x7528;reducer</a></li><ul><li><span class="title-icon "></span><a href="#&#xFF08;1&#xFF09;&#x5B9A;&#x4E49;reducer"><b></b>&#xFF08;1&#xFF09;&#x5B9A;&#x4E49;reducer</a></li><li><span class="title-icon "></span><a href="#&#xFF08;2&#xFF09;&#x9875;&#x9762;&#x5E94;&#x7528;"><b></b>&#xFF08;2&#xFF09;&#x9875;&#x9762;&#x5E94;&#x7528;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x516B;&#x3001;react-router"><b></b>&#x516B;&#x3001;React-router</a></li><ul><li><span class="title-icon "></span><a href="#1&#x3001;&#x5B89;&#x88C5;"><b></b>1&#x3001;&#x5B89;&#x88C5;</a></li><li><span class="title-icon "></span><a href="#2&#x3001;raect-router-&#x4ECB;&#x7ECD;"><b></b>2&#x3001;Raect-router &#x4ECB;&#x7ECD;</a></li><ul><li><span class="title-icon "></span><a href="#&#xFF08;1&#xFF09;reatc-router-&#x63D0;&#x4F9B;&#x6700;&#x57FA;&#x672C;&#x7684;&#x8DEF;&#x7531;&#x529F;&#x80FD;"><b></b>&#xFF08;1&#xFF09;reatc-router &#x63D0;&#x4F9B;&#x6700;&#x57FA;&#x672C;&#x7684;&#x8DEF;&#x7531;&#x529F;&#x80FD;</a></li><li><span class="title-icon "></span><a href="#&#xFF08;2&#xFF09;react-router-dom-&#x4F9D;&#x8D56;-reatc-router-&#x6240;&#x4EE5;&#x5B89;&#x88C5;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x4F1A;&#x81EA;&#x52A8;&#x5B89;&#x88C5;"><b></b>&#xFF08;2&#xFF09;react-router-dom &#x4F9D;&#x8D56; reatc-router &#x6240;&#x4EE5;&#x5B89;&#x88C5;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x4F1A;&#x81EA;&#x52A8;&#x5B89;&#x88C5;</a></li></ul><li><span class="title-icon "></span><a href="#3&#x3001;route-&#x5339;&#x914D;-location-&#x4E0E;-component-&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;"><b></b>3&#x3001;Route &#x5339;&#x914D; location &#x4E0E; component &#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;</a></li><ul><li><span class="title-icon "></span><a href="#&#xFF08;1&#xFF09;&#x4E09;&#x79CD;&#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x4E92;&#x65A5;"><b></b>&#xFF08;1&#xFF09;&#x4E09;&#x79CD;&#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x4E92;&#x65A5;</a></li><li><span class="title-icon "></span><a href="#&#xFF08;2&#xFF09;children-&#x6E32;&#x67D3;&#x4E0E;-location-&#x65E0;&#x5173;&#xFF0C;&#x5176;&#x4ED6;&#x4E24;&#x79CD;&#x90FD;&#x4E0E;location&#x6709;&#x5173;"><b></b>&#xFF08;2&#xFF09;children &#x6E32;&#x67D3;&#x4E0E; location &#x65E0;&#x5173;&#xFF0C;&#x5176;&#x4ED6;&#x4E24;&#x79CD;&#x90FD;&#x4E0E;location&#x6709;&#x5173;</a></li><li><span class="title-icon "></span><a href="#&#xFF08;3&#xFF09;switch-&#x72EC;&#x5360;&#x8DEF;&#x7531;&#xFF0C;&#x53EA;&#x4F1A;&#x6E32;&#x67D3;&#x4E00;&#x4E2A;"><b></b>&#xFF08;3&#xFF09;switch &#x72EC;&#x5360;&#x8DEF;&#x7531;&#xFF0C;&#x53EA;&#x4F1A;&#x6E32;&#x67D3;&#x4E00;&#x4E2A;</a></li></ul></ul></ul></div><a href="#&#x4E00;&#x3001;react&#x3001;react-dom&#x4F5C;&#x7528;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x4E00;&#x3001;react&#x3001;react-dom&#x4F5C;&#x7528;"><a name="&#x4E00;&#x3001;react&#x3001;react-dom&#x4F5C;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;react&#x3001;react-dom&#x4F5C;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4E00;&#x3001;react&#x3001;react-dom&#x4F5C;&#x7528;" class="plugin-anchor" href="#&#x4E00;&#x3001;react&#x3001;react-dom&#x4F5C;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;react&#x3001;react-dom&#x4F5C;&#x7528;</h1>
+<h2 id="1&#x3001;react-&#x8D1F;&#x8D23;&#x63CF;&#x8FF0;&#x7279;&#x6027;&#xFF0C;&#x63D0;&#x4F9B;react-api"><a name="1&#x3001;react-&#x8D1F;&#x8D23;&#x63CF;&#x8FF0;&#x7279;&#x6027;&#xFF0C;&#x63D0;&#x4F9B;react-api" class="anchor-navigation-ex-anchor" href="#1&#x3001;react-&#x8D1F;&#x8D23;&#x63CF;&#x8FF0;&#x7279;&#x6027;&#xFF0C;&#x63D0;&#x4F9B;react-api"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1&#x3001;react-&#x8D1F;&#x8D23;&#x63CF;&#x8FF0;&#x7279;&#x6027;&#xFF0C;&#x63D0;&#x4F9B;react-api" class="plugin-anchor" href="#1&#x3001;react-&#x8D1F;&#x8D23;&#x63CF;&#x8FF0;&#x7279;&#x6027;&#xFF0C;&#x63D0;&#x4F9B;react-api"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;react &#x8D1F;&#x8D23;&#x63CF;&#x8FF0;&#x7279;&#x6027;&#xFF0C;&#x63D0;&#x4F9B;React API</h2>
+<p>&#x7C7B;&#x7EC4;&#x4EF6;&#x3001;&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x3001;hooks&#x3001;contexts&#x3001;refs...&#x8FD9;&#x4E9B;&#x90FD;&#x662F;React&#x7279;&#x6027;&#xFF0C;&#x800C; react &#x6A21;&#x5757;&#x53EA;&#x63CF;&#x8FF0;&#x7279;&#x6027;&#x957F;&#x4EC0;&#x4E48;&#x6837;&#x3001;&#x8BE5;&#x600E;&#x4E48;&#x7528;&#xFF0C;&#x5E76;&#x4E0D;&#x8D1F;&#x8D23;&#x7279;&#x6027;&#x7684;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x3002;</p>
+<h2 id="2&#x3001;react-dom-&#x4F5C;&#x7528;"><a name="2&#x3001;react-dom-&#x4F5C;&#x7528;" class="anchor-navigation-ex-anchor" href="#2&#x3001;react-dom-&#x4F5C;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2&#x3001;react-dom-&#x4F5C;&#x7528;" class="plugin-anchor" href="#2&#x3001;react-dom-&#x4F5C;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;react-dom &#x4F5C;&#x7528;</h2>
+<p>react-dom&#x79F0;&#x4E3A;&#x6E32;&#x67D3;&#x5668;&#xFF0C;&#x8D1F;&#x8D23;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x5BBF;&#x4E3B;&#x8F7D;&#x4F53;&#x4E0A;&#x5B9E;&#x73B0;&#x7279;&#x6027;&#xFF0C;&#x8FBE;&#x5230;&#x4E0E;&#x63CF;&#x8FF0;&#x76F8;&#x5BF9;&#x5E94;&#x7684;&#x771F;&#x5B9E;&#x6548;&#x679C;&#x3002;&#x6BD4;&#x5982;&#x6E32;&#x67D3;&#x51FA;DOM&#x6811;&#x3001;&#x54CD;&#x5E94;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#x7B49;&#x3002;</p>
+<h1 id="&#x4E8C;&#x3001;jsx-&#x8BED;&#x6CD5;"><a name="&#x4E8C;&#x3001;jsx-&#x8BED;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;jsx-&#x8BED;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4E8C;&#x3001;jsx-&#x8BED;&#x6CD5;" class="plugin-anchor" href="#&#x4E8C;&#x3001;jsx-&#x8BED;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;JSX &#x8BED;&#x6CD5;</h1>
+<h2 id="1&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#xFF0C;&#x53D8;&#x91CF;&#x7528;--&#x5305;&#x88F9;"><a name="1&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#xFF0C;&#x53D8;&#x91CF;&#x7528;--&#x5305;&#x88F9;" class="anchor-navigation-ex-anchor" href="#1&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#xFF0C;&#x53D8;&#x91CF;&#x7528;--&#x5305;&#x88F9;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#xFF0C;&#x53D8;&#x91CF;&#x7528;--&#x5305;&#x88F9;" class="plugin-anchor" href="#1&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#xFF0C;&#x53D8;&#x91CF;&#x7528;--&#x5305;&#x88F9;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#xFF0C;&#x53D8;&#x91CF;&#x7528; {} &#x5305;&#x88F9;</h2>
+<pre><code class="lang-react">&lt;div&gt;hello, { name }&lt;/div&gt;
+</code></pre>
+<h2 id="2&#x3001;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x51FD;&#x6570;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><a name="2&#x3001;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x51FD;&#x6570;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#xFF0C;&#x7528;--&#x5305;&#x88F9;" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x51FD;&#x6570;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2&#x3001;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x51FD;&#x6570;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#xFF0C;&#x7528;--&#x5305;&#x88F9;" class="plugin-anchor" href="#2&#x3001;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x51FD;&#x6570;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x51FD;&#x6570;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#xFF0C;&#x7528; {} &#x5305;&#x88F9;</h2>
+<pre><code class="lang-react">&lt;div&gt;{ add(1, 3) }&lt;/div&gt;
+</code></pre>
+<h2 id="3&#x3001;html&#x6807;&#x7B7E;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><a name="3&#x3001;html&#x6807;&#x7B7E;&#xFF0C;&#x7528;--&#x5305;&#x88F9;" class="anchor-navigation-ex-anchor" href="#3&#x3001;html&#x6807;&#x7B7E;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="3&#x3001;html&#x6807;&#x7B7E;&#xFF0C;&#x7528;--&#x5305;&#x88F9;" class="plugin-anchor" href="#3&#x3001;html&#x6807;&#x7B7E;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;html&#x6807;&#x7B7E;&#xFF0C;&#x7528; {} &#x5305;&#x88F9;</h2>
+<pre><code class="lang-react">{ &lt;div&gt;hello&lt;/div&gt; }
+</code></pre>
+<h2 id="4&#x3001;&#x6761;&#x4EF6;&#x8BED;&#x53E5;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><a name="4&#x3001;&#x6761;&#x4EF6;&#x8BED;&#x53E5;&#xFF0C;&#x7528;--&#x5305;&#x88F9;" class="anchor-navigation-ex-anchor" href="#4&#x3001;&#x6761;&#x4EF6;&#x8BED;&#x53E5;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="4&#x3001;&#x6761;&#x4EF6;&#x8BED;&#x53E5;&#xFF0C;&#x7528;--&#x5305;&#x88F9;" class="plugin-anchor" href="#4&#x3001;&#x6761;&#x4EF6;&#x8BED;&#x53E5;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><i class="fa fa-link" aria-hidden="true"></i></a>4&#x3001;&#x6761;&#x4EF6;&#x8BED;&#x53E5;&#xFF0C;&#x7528; {} &#x5305;&#x88F9;</h2>
+<pre><code class="lang-react">{ Bolean(true) &amp;&amp; &lt;div&gt;hello&lt;/div&gt; }
+</code></pre>
+<h2 id="5&#x3001;&#x6570;&#x7EC4;&#x5FAA;&#x73AF;&#x8F93;&#x51FA;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><a name="5&#x3001;&#x6570;&#x7EC4;&#x5FAA;&#x73AF;&#x8F93;&#x51FA;&#xFF0C;&#x7528;--&#x5305;&#x88F9;" class="anchor-navigation-ex-anchor" href="#5&#x3001;&#x6570;&#x7EC4;&#x5FAA;&#x73AF;&#x8F93;&#x51FA;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="5&#x3001;&#x6570;&#x7EC4;&#x5FAA;&#x73AF;&#x8F93;&#x51FA;&#xFF0C;&#x7528;--&#x5305;&#x88F9;" class="plugin-anchor" href="#5&#x3001;&#x6570;&#x7EC4;&#x5FAA;&#x73AF;&#x8F93;&#x51FA;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><i class="fa fa-link" aria-hidden="true"></i></a>5&#x3001;&#x6570;&#x7EC4;&#x5FAA;&#x73AF;&#x8F93;&#x51FA;&#xFF0C;&#x7528; {} &#x5305;&#x88F9;</h2>
+<pre><code class="lang-react">{ arr.map(item =&gt; (&lt;li key={ item }&gt;{ item }&lt;/li&gt;)) }
+</code></pre>
+<h2 id="6&#x3001;&#x4F5C;&#x4E3A;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><a name="6&#x3001;&#x4F5C;&#x4E3A;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x7528;--&#x5305;&#x88F9;" class="anchor-navigation-ex-anchor" href="#6&#x3001;&#x4F5C;&#x4E3A;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="6&#x3001;&#x4F5C;&#x4E3A;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x7528;--&#x5305;&#x88F9;" class="plugin-anchor" href="#6&#x3001;&#x4F5C;&#x4E3A;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x7528;--&#x5305;&#x88F9;"><i class="fa fa-link" aria-hidden="true"></i></a>6&#x3001;&#x4F5C;&#x4E3A;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x7528; {} &#x5305;&#x88F9;</h2>
+<pre><code class="lang-react">&lt;div title={ name }&gt;&lt;/div&gt;
+</code></pre>
+<h1 id="&#x4E09;&#x3001;&#x4E24;&#x79CD;&#x7EC4;&#x4EF6;"><a name="&#x4E09;&#x3001;&#x4E24;&#x79CD;&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;&#x4E24;&#x79CD;&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4E09;&#x3001;&#x4E24;&#x79CD;&#x7EC4;&#x4EF6;" class="plugin-anchor" href="#&#x4E09;&#x3001;&#x4E24;&#x79CD;&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x3001;&#x4E24;&#x79CD;&#x7EC4;&#x4EF6;</h1>
+<h2 id="1&#x3001;class&#x7EC4;&#x4EF6;"><a name="1&#x3001;class&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#1&#x3001;class&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1&#x3001;class&#x7EC4;&#x4EF6;" class="plugin-anchor" href="#1&#x3001;class&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;class&#x7EC4;&#x4EF6;</h2>
+<h3 id="&#xFF08;1&#xFF09;&#x62E5;&#x6709;&#x72B6;&#x6001;"><a name="&#xFF08;1&#xFF09;&#x62E5;&#x6709;&#x72B6;&#x6001;" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;&#x62E5;&#x6709;&#x72B6;&#x6001;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;1&#xFF09;&#x62E5;&#x6709;&#x72B6;&#x6001;" class="plugin-anchor" href="#&#xFF08;1&#xFF09;&#x62E5;&#x6709;&#x72B6;&#x6001;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;&#x62E5;&#x6709;&#x72B6;&#x6001;</h3>
+<h3 id="&#xFF08;2&#xFF09;&#x62E5;&#x6709;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;"><a name="&#xFF08;2&#xFF09;&#x62E5;&#x6709;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;&#x62E5;&#x6709;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;2&#xFF09;&#x62E5;&#x6709;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#xFF08;2&#xFF09;&#x62E5;&#x6709;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;&#x62E5;&#x6709;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;</h3>
+<h2 id="2&#x3001;function-&#x7EC4;&#x4EF6;"><a name="2&#x3001;function-&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#2&#x3001;function-&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2&#x3001;function-&#x7EC4;&#x4EF6;" class="plugin-anchor" href="#2&#x3001;function-&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;function &#x7EC4;&#x4EF6;</h2>
+<h3 id="&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x72B6;&#x6001;&#x4F7F;&#x7528;-usestate"><a name="&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x72B6;&#x6001;&#x4F7F;&#x7528;-usestate" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x72B6;&#x6001;&#x4F7F;&#x7528;-usestate"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x72B6;&#x6001;&#x4F7F;&#x7528;-usestate" class="plugin-anchor" href="#&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x72B6;&#x6001;&#x4F7F;&#x7528;-usestate"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x72B6;&#x6001;&#x4F7F;&#x7528; useState</h3>
+<ul>
+<li>&#x4F9D;&#x8D56;&#x9879;&#x4E3A;&#x7A7A;&#xFF0C;&#x8868;&#x793A;&#x53EA;&#x6267;&#x884C;&#x4E00;&#x6B21;</li>
+<li>&#x6709;&#x4F9D;&#x8D56;&#xFF0C;&#x8868;&#x793A;&#x4F9D;&#x8D56;&#x53D8;&#x5316;&#x6267;&#x884C;&#x91CC;&#x9762;&#x7684;</li>
+</ul>
+<h1 id="&#x56DB;&#x3001;setstate-&#x7684;&#x7528;&#x6CD5;"><a name="&#x56DB;&#x3001;setstate-&#x7684;&#x7528;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x3001;setstate-&#x7684;&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x56DB;&#x3001;setstate-&#x7684;&#x7528;&#x6CD5;" class="plugin-anchor" href="#&#x56DB;&#x3001;setstate-&#x7684;&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DB;&#x3001;setState &#x7684;&#x7528;&#x6CD5;</h1>
+<h2 id="1&#x3001;&#x5408;&#x6210;&#x4E8B;&#x4EF6;&#x3001;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x662F;&#x5F02;&#x6B65;&#x7684;&#xFF08;&#x6279;&#x91CF;&#x66F4;&#x65B0;&#x3001;&#x4F18;&#x5316;&#x6027;&#x80FD;&#x7684;&#x76EE;&#x7684;&#xFF09;"><a name="1&#x3001;&#x5408;&#x6210;&#x4E8B;&#x4EF6;&#x3001;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x662F;&#x5F02;&#x6B65;&#x7684;&#xFF08;&#x6279;&#x91CF;&#x66F4;&#x65B0;&#x3001;&#x4F18;&#x5316;&#x6027;&#x80FD;&#x7684;&#x76EE;&#x7684;&#xFF09;" class="anchor-navigation-ex-anchor" href="#1&#x3001;&#x5408;&#x6210;&#x4E8B;&#x4EF6;&#x3001;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x662F;&#x5F02;&#x6B65;&#x7684;&#xFF08;&#x6279;&#x91CF;&#x66F4;&#x65B0;&#x3001;&#x4F18;&#x5316;&#x6027;&#x80FD;&#x7684;&#x76EE;&#x7684;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1&#x3001;&#x5408;&#x6210;&#x4E8B;&#x4EF6;&#x3001;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x662F;&#x5F02;&#x6B65;&#x7684;&#xFF08;&#x6279;&#x91CF;&#x66F4;&#x65B0;&#x3001;&#x4F18;&#x5316;&#x6027;&#x80FD;&#x7684;&#x76EE;&#x7684;&#xFF09;" class="plugin-anchor" href="#1&#x3001;&#x5408;&#x6210;&#x4E8B;&#x4EF6;&#x3001;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x662F;&#x5F02;&#x6B65;&#x7684;&#xFF08;&#x6279;&#x91CF;&#x66F4;&#x65B0;&#x3001;&#x4F18;&#x5316;&#x6027;&#x80FD;&#x7684;&#x76EE;&#x7684;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;&#x5408;&#x6210;&#x4E8B;&#x4EF6;&#x3001;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x662F;&#x5F02;&#x6B65;&#x7684;&#xFF08;&#x6279;&#x91CF;&#x66F4;&#x65B0;&#x3001;&#x4F18;&#x5316;&#x6027;&#x80FD;&#x7684;&#x76EE;&#x7684;&#xFF09;</h2>
+<pre><code class="lang-jsx">componentDidMount() {
+    <span class="hljs-keyword">this</span>.setState({
+        counter: <span class="hljs-keyword">this</span>.state.counter + <span class="hljs-number">1</span>
+    })
+}
+
+{
+    groupName: <span class="hljs-string">&quot;&quot;</span>,
+    groupMember: <span class="hljs-string">&quot;&quot;</span>,
+}
+
+
+setCounter = () =&gt; {
+    <span class="hljs-keyword">this</span>.setState({
+        counter: <span class="hljs-keyword">this</span>.state.counter + <span class="hljs-number">1</span>
+    })
+};
+
+render() {
+    <span class="hljs-keyword">return</span> {
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.setCounter}</span>&gt;</span>
+                {this.state.counter}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    }
+}
+</code></pre>
+<h2 id="2&#x3001;&#x5728;-settimeout--&#x539F;&#x751F;&#x4E8B;&#x4EF6;--setstate&#x7B2C;&#x4E8C;&#x4E2A;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#x4E2D;-&#x8BBF;&#x95EE;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF1A;"><a name="2&#x3001;&#x5728;-settimeout--&#x539F;&#x751F;&#x4E8B;&#x4EF6;--setstate&#x7B2C;&#x4E8C;&#x4E2A;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#x4E2D;-&#x8BBF;&#x95EE;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x5728;-settimeout--&#x539F;&#x751F;&#x4E8B;&#x4EF6;--setstate&#x7B2C;&#x4E8C;&#x4E2A;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#x4E2D;-&#x8BBF;&#x95EE;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2&#x3001;&#x5728;-settimeout--&#x539F;&#x751F;&#x4E8B;&#x4EF6;--setstate&#x7B2C;&#x4E8C;&#x4E2A;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#x4E2D;-&#x8BBF;&#x95EE;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF1A;" class="plugin-anchor" href="#2&#x3001;&#x5728;-settimeout--&#x539F;&#x751F;&#x4E8B;&#x4EF6;--setstate&#x7B2C;&#x4E8C;&#x4E2A;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#x4E2D;-&#x8BBF;&#x95EE;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x5728; setTimeout / &#x539F;&#x751F;&#x4E8B;&#x4EF6; / setState&#x7B2C;&#x4E8C;&#x4E2A;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#x4E2D; &#x8BBF;&#x95EE;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF1A;</h2>
+<ul>
+<li>setTimeout</li>
+</ul>
+<pre><code class="lang-jsx">setCounter = () =&gt; {
+    setTimeout(() =&gt; {
+        <span class="hljs-keyword">this</span>.setState({
+            counter: <span class="hljs-keyword">this</span>.state.counter + <span class="hljs-number">1</span>
+        })
+    }, <span class="hljs-number">0</span>)
+};
+
+render() {
+    <span class="hljs-keyword">return</span> {
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.setCounter}</span>&gt;</span>
+                {this.state.counter}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    }
+}
+</code></pre>
+<ul>
+<li>&#x5728;&#x539F;&#x751F;&#x4E8B;&#x4EF6;&#x4E2D;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF0C;</li>
+</ul>
+<pre><code class="lang-jsx">componentDidMount() {
+    <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;#app&apos;</span>).addEventListener(<span class="hljs-string">&apos;click&apos;</span>, () =&gt; {
+        <span class="hljs-keyword">this</span>.setCounter();
+    })
+}
+
+setCounter = () =&gt; {
+    <span class="hljs-keyword">this</span>.setState({
+        counter: <span class="hljs-keyword">this</span>.state.counter + <span class="hljs-number">1</span>
+    })
+};
+
+render() {
+    <span class="hljs-keyword">return</span> {
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;test&quot;</span>&gt;</span>
+                {this.state.counter}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    }
+}
+</code></pre>
+<ul>
+<li>setState &#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-jsx">setCounter = () =&gt; {
+    <span class="hljs-keyword">this</span>.setState({
+        counter: <span class="hljs-keyword">this</span>.state.counter + <span class="hljs-number">1</span>
+    }, () =&gt; {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.state.counter)
+    })
+};
+
+render() {
+    <span class="hljs-keyword">return</span> {
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.setCounter}</span>&gt;</span>
+                {this.state.counter}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    }
+}
+</code></pre>
+<h2 id="3&#x3001;state-&#x66F4;&#x65B0;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#xFF1A;"><a name="3&#x3001;state-&#x66F4;&#x65B0;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#3&#x3001;state-&#x66F4;&#x65B0;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="3&#x3001;state-&#x66F4;&#x65B0;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#xFF1A;" class="plugin-anchor" href="#3&#x3001;state-&#x66F4;&#x65B0;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;state &#x66F4;&#x65B0;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#xFF1A;</h2>
+<h3 id="&#xFF08;1&#xFF09;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x5BF9;&#x4E00;&#x4E2A;-state-&#x8FDB;&#x884C;&#x591A;&#x6B21;&#x66F4;&#x65B0;&#xFF0C;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#x66F4;&#x65B0;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x6309;&#x7167;&#x540E;&#x9762;&#x7684;"><a name="&#xFF08;1&#xFF09;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x5BF9;&#x4E00;&#x4E2A;-state-&#x8FDB;&#x884C;&#x591A;&#x6B21;&#x66F4;&#x65B0;&#xFF0C;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#x66F4;&#x65B0;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x6309;&#x7167;&#x540E;&#x9762;&#x7684;" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x5BF9;&#x4E00;&#x4E2A;-state-&#x8FDB;&#x884C;&#x591A;&#x6B21;&#x66F4;&#x65B0;&#xFF0C;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#x66F4;&#x65B0;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x6309;&#x7167;&#x540E;&#x9762;&#x7684;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;1&#xFF09;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x5BF9;&#x4E00;&#x4E2A;-state-&#x8FDB;&#x884C;&#x591A;&#x6B21;&#x66F4;&#x65B0;&#xFF0C;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#x66F4;&#x65B0;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x6309;&#x7167;&#x540E;&#x9762;&#x7684;" class="plugin-anchor" href="#&#xFF08;1&#xFF09;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x5BF9;&#x4E00;&#x4E2A;-state-&#x8FDB;&#x884C;&#x591A;&#x6B21;&#x66F4;&#x65B0;&#xFF0C;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#x66F4;&#x65B0;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x6309;&#x7167;&#x540E;&#x9762;&#x7684;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x5BF9;&#x4E00;&#x4E2A; state &#x8FDB;&#x884C;&#x591A;&#x6B21;&#x66F4;&#x65B0;&#xFF0C;&#x4F1A;&#x88AB;&#x5408;&#x5E76;&#x66F4;&#x65B0;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x6309;&#x7167;&#x540E;&#x9762;&#x7684;</h3>
+<pre><code class="lang-jsx">setCounter = () =&gt; {
+    <span class="hljs-keyword">this</span>.setState({
+        counter: <span class="hljs-keyword">this</span>.state.counter + <span class="hljs-number">1</span>
+    })
+    <span class="hljs-keyword">this</span>.setState({
+        counter: <span class="hljs-keyword">this</span>.state.counter + <span class="hljs-number">2</span>
+    })
+};
+
+render() {
+    <span class="hljs-keyword">return</span> {
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.setCounter}</span>&gt;</span>
+                {this.state.counter}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    }
+}
+</code></pre>
+<h3 id="&#xFF08;2&#xFF09;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x60F3;&#x8981;&#x5B9E;&#x73B0;&#x94FE;&#x5F0F;&#x66F4;&#x65B0;&#xFF0C;setstate-&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5199;&#x6210;&#x51FD;&#x6570;"><a name="&#xFF08;2&#xFF09;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x60F3;&#x8981;&#x5B9E;&#x73B0;&#x94FE;&#x5F0F;&#x66F4;&#x65B0;&#xFF0C;setstate-&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5199;&#x6210;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x60F3;&#x8981;&#x5B9E;&#x73B0;&#x94FE;&#x5F0F;&#x66F4;&#x65B0;&#xFF0C;setstate-&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5199;&#x6210;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;2&#xFF09;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x60F3;&#x8981;&#x5B9E;&#x73B0;&#x94FE;&#x5F0F;&#x66F4;&#x65B0;&#xFF0C;setstate-&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5199;&#x6210;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#xFF08;2&#xFF09;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x60F3;&#x8981;&#x5B9E;&#x73B0;&#x94FE;&#x5F0F;&#x66F4;&#x65B0;&#xFF0C;setstate-&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5199;&#x6210;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x60F3;&#x8981;&#x5B9E;&#x73B0;&#x94FE;&#x5F0F;&#x66F4;&#x65B0;&#xFF0C;setState &#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5199;&#x6210;&#x51FD;&#x6570;</h3>
+<pre><code class="lang-jsx">setCounter = () =&gt; {
+    <span class="hljs-keyword">this</span>.setState(state =&gt; {
+        <span class="hljs-keyword">return</span> {
+            counter: state.counter + <span class="hljs-number">1</span>
+        }
+    })
+    <span class="hljs-keyword">this</span>.setState(state =&gt; {
+        <span class="hljs-keyword">return</span> {
+            counter: state.counter + <span class="hljs-number">2</span>
+        }
+    })
+};
+
+render() {
+    <span class="hljs-keyword">return</span> {
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.setCounter}</span>&gt;</span>
+                {this.state.counter}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    }
+}
+</code></pre>
+<h1 id="&#x4E94;&#x3001;react-&#x751F;&#x547D;&#x5468;&#x671F;"><a name="&#x4E94;&#x3001;react-&#x751F;&#x547D;&#x5468;&#x671F;" class="anchor-navigation-ex-anchor" href="#&#x4E94;&#x3001;react-&#x751F;&#x547D;&#x5468;&#x671F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4E94;&#x3001;react-&#x751F;&#x547D;&#x5468;&#x671F;" class="plugin-anchor" href="#&#x4E94;&#x3001;react-&#x751F;&#x547D;&#x5468;&#x671F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E94;&#x3001;React &#x751F;&#x547D;&#x5468;&#x671F;</h1>
+<h2 id="1&#x3001;v-163-&#x4E4B;&#x524D;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x6267;&#x884C;&#x987A;&#x5E8F;"><a name="1&#x3001;v-163-&#x4E4B;&#x524D;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x6267;&#x884C;&#x987A;&#x5E8F;" class="anchor-navigation-ex-anchor" href="#1&#x3001;v-163-&#x4E4B;&#x524D;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x6267;&#x884C;&#x987A;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1&#x3001;v-163-&#x4E4B;&#x524D;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x6267;&#x884C;&#x987A;&#x5E8F;" class="plugin-anchor" href="#1&#x3001;v-163-&#x4E4B;&#x524D;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x6267;&#x884C;&#x987A;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;v 16.3 &#x4E4B;&#x524D;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x6267;&#x884C;&#x987A;&#x5E8F;</h2>
+<h3 id="&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#x6D41;&#x7A0B;"><a name="&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#x6D41;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#x6D41;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#x6D41;&#x7A0B;" class="plugin-anchor" href="#&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#x6D41;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#x6D41;&#x7A0B;</h3>
+<ul>
+<li>static defaultProps &#x9ED8;&#x8BA4;&#x5C5E;&#x6027;</li>
+<li>static propTypes<ul>
+<li>propTypes.string.isRequired</li>
+</ul>
+</li>
+<li>constructor()</li>
+<li>componentWillMount()</li>
+<li>render()</li>
+<li>componentDidMount()</li>
+</ul>
+<h3 id="&#xFF08;2&#xFF09;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#x6D41;&#x7A0B;"><a name="&#xFF08;2&#xFF09;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#x6D41;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#x6D41;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;2&#xFF09;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#x6D41;&#x7A0B;" class="plugin-anchor" href="#&#xFF08;2&#xFF09;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#x6D41;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#x6D41;&#x7A0B;</h3>
+<ul>
+<li>willReceiveProps(nextProps) &#x63A5;&#x53D7;&#x7236;&#x7EC4;&#x4EF6; props&#xFF0C;&#x521D;&#x6B21;&#x6E32;&#x67D3;&#x4E0D;&#x6267;&#x884C;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x8FD9;&#x4E2A;&#x505A;&#x6027;&#x80FD;&#x4F18;&#x5316;</li>
+<li>componentShouldUpdate()<ul>
+<li>&#x66F4;&#x65B0; componentWillUpdate&#x3001;render&#x3001;componentDidUpdate()</li>
+</ul>
+</li>
+</ul>
+<h2 id="2&#x3001;&#x4E00;&#x4E9B;&#x751F;&#x547D;&#x5468;&#x671F;&#x88AB;&#x5E9F;&#x9664;"><a name="2&#x3001;&#x4E00;&#x4E9B;&#x751F;&#x547D;&#x5468;&#x671F;&#x88AB;&#x5E9F;&#x9664;" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x4E00;&#x4E9B;&#x751F;&#x547D;&#x5468;&#x671F;&#x88AB;&#x5E9F;&#x9664;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2&#x3001;&#x4E00;&#x4E9B;&#x751F;&#x547D;&#x5468;&#x671F;&#x88AB;&#x5E9F;&#x9664;" class="plugin-anchor" href="#2&#x3001;&#x4E00;&#x4E9B;&#x751F;&#x547D;&#x5468;&#x671F;&#x88AB;&#x5E9F;&#x9664;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x4E00;&#x4E9B;&#x751F;&#x547D;&#x5468;&#x671F;&#x88AB;&#x5E9F;&#x9664;</h2>
+<h3 id="&#xFF08;1&#xFF09;&#x5E9F;&#x9664;-componentwillmount&#x3001;componentwillreceiveprops&#x3001;componentwillupdate"><a name="&#xFF08;1&#xFF09;&#x5E9F;&#x9664;-componentwillmount&#x3001;componentwillreceiveprops&#x3001;componentwillupdate" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;&#x5E9F;&#x9664;-componentwillmount&#x3001;componentwillreceiveprops&#x3001;componentwillupdate"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;1&#xFF09;&#x5E9F;&#x9664;-componentwillmount&#x3001;componentwillreceiveprops&#x3001;componentwillupdate" class="plugin-anchor" href="#&#xFF08;1&#xFF09;&#x5E9F;&#x9664;-componentwillmount&#x3001;componentwillreceiveprops&#x3001;componentwillupdate"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;&#x5E9F;&#x9664; componentWillMount&#x3001;componentWillReceiveProps&#x3001;componentWillUpdate</h3>
+<h3 id="&#xFF08;2&#xFF09;componentwillreceivepropsnextprops"><a name="&#xFF08;2&#xFF09;componentwillreceivepropsnextprops" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;componentwillreceivepropsnextprops"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;2&#xFF09;componentwillreceivepropsnextprops" class="plugin-anchor" href="#&#xFF08;2&#xFF09;componentwillreceivepropsnextprops"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;componentWillReceiveProps(nextProps)</h3>
+<ul>
+<li>&#x521D;&#x6B21;&#x6E32;&#x67D3;&#x65F6;&#x5019;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#x53EA;&#x6709;&#x5728;&#x5DF2;&#x6302;&#x8F7D;&#x7684;&#x7EC4;&#x4EF6;&#x63A5;&#x53D7;&#x65B0;&#x7684; props &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x624D;&#x4F1A;&#x6267;&#x884C;</li>
+</ul>
+<h3 id="&#xFF08;3&#xFF09;&#x5982;&#x9700;&#x4F7F;&#x7528;&#x6DFB;&#x52A0;-unsafe-&#x524D;&#x7F00;"><a name="&#xFF08;3&#xFF09;&#x5982;&#x9700;&#x4F7F;&#x7528;&#x6DFB;&#x52A0;-unsafe-&#x524D;&#x7F00;" class="anchor-navigation-ex-anchor" href="#&#xFF08;3&#xFF09;&#x5982;&#x9700;&#x4F7F;&#x7528;&#x6DFB;&#x52A0;-unsafe-&#x524D;&#x7F00;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;3&#xFF09;&#x5982;&#x9700;&#x4F7F;&#x7528;&#x6DFB;&#x52A0;-unsafe-&#x524D;&#x7F00;" class="plugin-anchor" href="#&#xFF08;3&#xFF09;&#x5982;&#x9700;&#x4F7F;&#x7528;&#x6DFB;&#x52A0;-unsafe-&#x524D;&#x7F00;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;3&#xFF09;&#x5982;&#x9700;&#x4F7F;&#x7528;&#x6DFB;&#x52A0; UNSAFE_ &#x524D;&#x7F00;</h3>
+<ul>
+<li>UNSAFE_componentWillMount</li>
+<li>UNSAFE_componentWillReceiveProps</li>
+<li><p>UNSAFE_componentWillUpdate</p>
+</li>
+<li><p>&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x6279;&#x91CF;&#x6DFB;&#x52A0;</p>
+</li>
+</ul>
+<pre><code class="lang-powershell">npx react-codemod rename-unsafe-lifecycles &lt;path&gt;
+</code></pre>
+<h2 id="3&#x3001;v164-&#x53CA;&#x4E4B;&#x540E;&#x5F15;&#x5165;&#x4E24;&#x4E2A;&#x65B0;&#x751F;&#x547D;&#x5468;&#x671F;"><a name="3&#x3001;v164-&#x53CA;&#x4E4B;&#x540E;&#x5F15;&#x5165;&#x4E24;&#x4E2A;&#x65B0;&#x751F;&#x547D;&#x5468;&#x671F;" class="anchor-navigation-ex-anchor" href="#3&#x3001;v164-&#x53CA;&#x4E4B;&#x540E;&#x5F15;&#x5165;&#x4E24;&#x4E2A;&#x65B0;&#x751F;&#x547D;&#x5468;&#x671F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="3&#x3001;v164-&#x53CA;&#x4E4B;&#x540E;&#x5F15;&#x5165;&#x4E24;&#x4E2A;&#x65B0;&#x751F;&#x547D;&#x5468;&#x671F;" class="plugin-anchor" href="#3&#x3001;v164-&#x53CA;&#x4E4B;&#x540E;&#x5F15;&#x5165;&#x4E24;&#x4E2A;&#x65B0;&#x751F;&#x547D;&#x5468;&#x671F;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;v16.4 &#x53CA;&#x4E4B;&#x540E;&#x5F15;&#x5165;&#x4E24;&#x4E2A;&#x65B0;&#x751F;&#x547D;&#x5468;&#x671F;</h2>
+<h3 id="&#xFF08;1&#xFF09;static-getderivedstatefrompropsprops-state"><a name="&#xFF08;1&#xFF09;static-getderivedstatefrompropsprops-state" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;static-getderivedstatefrompropsprops-state"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;1&#xFF09;static-getderivedstatefrompropsprops-state" class="plugin-anchor" href="#&#xFF08;1&#xFF09;static-getderivedstatefrompropsprops-state"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;static getDerivedStateFromProps(props, state)</h3>
+<ul>
+<li>&#x8FD9;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x53EF;&#x4EE5;&#x66F4;&#x65B0; state</li>
+</ul>
+<h3 id="&#xFF08;2&#xFF09;getsnapshotbeforeupdateprevprops-prevstate-&#x5728;&#x66F4;&#x65B0;&#x4E4B;&#x524D;&#x7684;&#x7F29;&#x5F71;"><a name="&#xFF08;2&#xFF09;getsnapshotbeforeupdateprevprops-prevstate-&#x5728;&#x66F4;&#x65B0;&#x4E4B;&#x524D;&#x7684;&#x7F29;&#x5F71;" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;getsnapshotbeforeupdateprevprops-prevstate-&#x5728;&#x66F4;&#x65B0;&#x4E4B;&#x524D;&#x7684;&#x7F29;&#x5F71;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;2&#xFF09;getsnapshotbeforeupdateprevprops-prevstate-&#x5728;&#x66F4;&#x65B0;&#x4E4B;&#x524D;&#x7684;&#x7F29;&#x5F71;" class="plugin-anchor" href="#&#xFF08;2&#xFF09;getsnapshotbeforeupdateprevprops-prevstate-&#x5728;&#x66F4;&#x65B0;&#x4E4B;&#x524D;&#x7684;&#x7F29;&#x5F71;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;getSnapshotBeforeUpdate(prevProps, prevState) &#x5728;&#x66F4;&#x65B0;&#x4E4B;&#x524D;&#x7684;&#x7F29;&#x5F71;</h3>
+<ul>
+<li>&#x8FD9;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x53EF;&#x4EE5;&#x5C06;&#x8FD4;&#x56DE;&#x503C;&#x4F20;&#x9012;&#x7ED9; componentDidUpdate(prevProps, prevState, snapShot)</li>
+</ul>
+<h2 id="4&#x3001;v164-&#x751F;&#x547D;&#x5468;&#x671F;&#x6267;&#x884C;&#x987A;&#x5E8F;"><a name="4&#x3001;v164-&#x751F;&#x547D;&#x5468;&#x671F;&#x6267;&#x884C;&#x987A;&#x5E8F;" class="anchor-navigation-ex-anchor" href="#4&#x3001;v164-&#x751F;&#x547D;&#x5468;&#x671F;&#x6267;&#x884C;&#x987A;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="4&#x3001;v164-&#x751F;&#x547D;&#x5468;&#x671F;&#x6267;&#x884C;&#x987A;&#x5E8F;" class="plugin-anchor" href="#4&#x3001;v164-&#x751F;&#x547D;&#x5468;&#x671F;&#x6267;&#x884C;&#x987A;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>4&#x3001;v16.4 &#x751F;&#x547D;&#x5468;&#x671F;&#x6267;&#x884C;&#x987A;&#x5E8F;</h2>
+<h3 id="&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#xFF1A;"><a name="&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#xFF1A;" class="plugin-anchor" href="#&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#xFF1A;</h3>
+<ul>
+<li>static defaultProps</li>
+<li>static propTypes</li>
+<li>constructor()</li>
+<li>static getDerivedStateFromProps(props, state)</li>
+<li>render()</li>
+<li>componentDidMount()</li>
+</ul>
+<h3 id="&#xFF08;2&#xFF09;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#xFF1A;"><a name="&#xFF08;2&#xFF09;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;2&#xFF09;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#xFF1A;" class="plugin-anchor" href="#&#xFF08;2&#xFF09;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#xFF1A;</h3>
+<ul>
+<li>static getDerivedStateFromProps(props, state)</li>
+<li>shouldCompoentUpdate(nextProps,nextState)&#x8FD4;&#x56DE;&#x5E03;&#x5C14;&#x786E;&#x8BA4;&#x662F;&#x5426;&#x66F4;&#x65B0;</li>
+<li>render()</li>
+<li>getSnapshotBeforeUpdate(prevProps,prevState)&#x7B2C;&#x4E00;&#x6B21;&#x6CA1;&#x503C;</li>
+<li>componentDidMount(nextProps,nextState, snap)</li>
+</ul>
+<h1 id="&#x516D;&#x3001;redux"><a name="&#x516D;&#x3001;redux" class="anchor-navigation-ex-anchor" href="#&#x516D;&#x3001;redux"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x516D;&#x3001;redux" class="plugin-anchor" href="#&#x516D;&#x3001;redux"><i class="fa fa-link" aria-hidden="true"></i></a>&#x516D;&#x3001;Redux</h1>
+<h2 id="1&#x3001;&#x5B89;&#x88C5;&#x4F9D;&#x8D56;"><a name="1&#x3001;&#x5B89;&#x88C5;&#x4F9D;&#x8D56;" class="anchor-navigation-ex-anchor" href="#1&#x3001;&#x5B89;&#x88C5;&#x4F9D;&#x8D56;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1&#x3001;&#x5B89;&#x88C5;&#x4F9D;&#x8D56;" class="plugin-anchor" href="#1&#x3001;&#x5B89;&#x88C5;&#x4F9D;&#x8D56;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;&#x5B89;&#x88C5;&#x4F9D;&#x8D56;</h2>
+<pre><code class="lang-powershell">npm i redux -S
+</code></pre>
+<h2 id="2&#x3001;&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1A;"><a name="2&#x3001;&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2&#x3001;&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1A;" class="plugin-anchor" href="#2&#x3001;&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1A;</h2>
+<h3 id="&#xFF08;1&#xFF09;&#x5927;&#x91CF;&#x3001;&#x968F;&#x65F6;&#x95F4;&#x53D8;&#x5316;&#x7684;&#x6570;&#x636E;"><a name="&#xFF08;1&#xFF09;&#x5927;&#x91CF;&#x3001;&#x968F;&#x65F6;&#x95F4;&#x53D8;&#x5316;&#x7684;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;&#x5927;&#x91CF;&#x3001;&#x968F;&#x65F6;&#x95F4;&#x53D8;&#x5316;&#x7684;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;1&#xFF09;&#x5927;&#x91CF;&#x3001;&#x968F;&#x65F6;&#x95F4;&#x53D8;&#x5316;&#x7684;&#x6570;&#x636E;" class="plugin-anchor" href="#&#xFF08;1&#xFF09;&#x5927;&#x91CF;&#x3001;&#x968F;&#x65F6;&#x95F4;&#x53D8;&#x5316;&#x7684;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;&#x5927;&#x91CF;&#x3001;&#x968F;&#x65F6;&#x95F4;&#x53D8;&#x5316;&#x7684;&#x6570;&#x636E;</h3>
+<h3 id="&#xFF08;2&#xFF09;state-&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x53EF;&#x9760;&#x7684;&#x6570;&#x636E;&#x6765;&#x6E90;"><a name="&#xFF08;2&#xFF09;state-&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x53EF;&#x9760;&#x7684;&#x6570;&#x636E;&#x6765;&#x6E90;" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;state-&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x53EF;&#x9760;&#x7684;&#x6570;&#x636E;&#x6765;&#x6E90;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;2&#xFF09;state-&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x53EF;&#x9760;&#x7684;&#x6570;&#x636E;&#x6765;&#x6E90;" class="plugin-anchor" href="#&#xFF08;2&#xFF09;state-&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x53EF;&#x9760;&#x7684;&#x6570;&#x636E;&#x6765;&#x6E90;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;state &#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x53EF;&#x9760;&#x7684;&#x6570;&#x636E;&#x6765;&#x6E90;</h3>
+<h3 id="&#xFF08;3&#xFF09;state-&#x653E;&#x5728;&#x6700;&#x9876;&#x5C42;&#x7EC4;&#x4EF6;&#x4E2D;&#x5DF2;&#x7ECF;&#x65E0;&#x6CD5;&#x6EE1;&#x8DB3;&#x9700;&#x8981;&#x4E86;"><a name="&#xFF08;3&#xFF09;state-&#x653E;&#x5728;&#x6700;&#x9876;&#x5C42;&#x7EC4;&#x4EF6;&#x4E2D;&#x5DF2;&#x7ECF;&#x65E0;&#x6CD5;&#x6EE1;&#x8DB3;&#x9700;&#x8981;&#x4E86;" class="anchor-navigation-ex-anchor" href="#&#xFF08;3&#xFF09;state-&#x653E;&#x5728;&#x6700;&#x9876;&#x5C42;&#x7EC4;&#x4EF6;&#x4E2D;&#x5DF2;&#x7ECF;&#x65E0;&#x6CD5;&#x6EE1;&#x8DB3;&#x9700;&#x8981;&#x4E86;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;3&#xFF09;state-&#x653E;&#x5728;&#x6700;&#x9876;&#x5C42;&#x7EC4;&#x4EF6;&#x4E2D;&#x5DF2;&#x7ECF;&#x65E0;&#x6CD5;&#x6EE1;&#x8DB3;&#x9700;&#x8981;&#x4E86;" class="plugin-anchor" href="#&#xFF08;3&#xFF09;state-&#x653E;&#x5728;&#x6700;&#x9876;&#x5C42;&#x7EC4;&#x4EF6;&#x4E2D;&#x5DF2;&#x7ECF;&#x65E0;&#x6CD5;&#x6EE1;&#x8DB3;&#x9700;&#x8981;&#x4E86;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;3&#xFF09;state &#x653E;&#x5728;&#x6700;&#x9876;&#x5C42;&#x7EC4;&#x4EF6;&#x4E2D;&#x5DF2;&#x7ECF;&#x65E0;&#x6CD5;&#x6EE1;&#x8DB3;&#x9700;&#x8981;&#x4E86;</h3>
+<h3 id="&#xFF08;4&#xFF09;&#x67D0;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#x9700;&#x8981;&#x5171;&#x4EAB;"><a name="&#xFF08;4&#xFF09;&#x67D0;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#x9700;&#x8981;&#x5171;&#x4EAB;" class="anchor-navigation-ex-anchor" href="#&#xFF08;4&#xFF09;&#x67D0;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#x9700;&#x8981;&#x5171;&#x4EAB;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;4&#xFF09;&#x67D0;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#x9700;&#x8981;&#x5171;&#x4EAB;" class="plugin-anchor" href="#&#xFF08;4&#xFF09;&#x67D0;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#x9700;&#x8981;&#x5171;&#x4EAB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;4&#xFF09;&#x67D0;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#x9700;&#x8981;&#x5171;&#x4EAB;</h3>
+<h2 id="3&#x3001;redux-&#x66F4;&#x65B0;&#x6D41;&#x7A0B;&#xFF1A;"><a name="3&#x3001;redux-&#x66F4;&#x65B0;&#x6D41;&#x7A0B;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#3&#x3001;redux-&#x66F4;&#x65B0;&#x6D41;&#x7A0B;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="3&#x3001;redux-&#x66F4;&#x65B0;&#x6D41;&#x7A0B;&#xFF1A;" class="plugin-anchor" href="#3&#x3001;redux-&#x66F4;&#x65B0;&#x6D41;&#x7A0B;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;redux &#x66F4;&#x65B0;&#x6D41;&#x7A0B;&#xFF1A;</h2>
+<h3 id="&#xFF08;1&#xFF09;&#x89C6;&#x56FE;&#x9700;&#x8981;&#x66F4;&#x65B0;&#xFF0C;&#x8C03;&#x7528;-redux-&#x7684;-dispatch-&#x65B9;&#x6CD5;&#x5E76;&#x6307;&#x5B9A;&#x6D3E;&#x53D1;&#x52A8;&#x4F5C;&#x901A;&#x77E5;-reducer"><a name="&#xFF08;1&#xFF09;&#x89C6;&#x56FE;&#x9700;&#x8981;&#x66F4;&#x65B0;&#xFF0C;&#x8C03;&#x7528;-redux-&#x7684;-dispatch-&#x65B9;&#x6CD5;&#x5E76;&#x6307;&#x5B9A;&#x6D3E;&#x53D1;&#x52A8;&#x4F5C;&#x901A;&#x77E5;-reducer" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;&#x89C6;&#x56FE;&#x9700;&#x8981;&#x66F4;&#x65B0;&#xFF0C;&#x8C03;&#x7528;-redux-&#x7684;-dispatch-&#x65B9;&#x6CD5;&#x5E76;&#x6307;&#x5B9A;&#x6D3E;&#x53D1;&#x52A8;&#x4F5C;&#x901A;&#x77E5;-reducer"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;1&#xFF09;&#x89C6;&#x56FE;&#x9700;&#x8981;&#x66F4;&#x65B0;&#xFF0C;&#x8C03;&#x7528;-redux-&#x7684;-dispatch-&#x65B9;&#x6CD5;&#x5E76;&#x6307;&#x5B9A;&#x6D3E;&#x53D1;&#x52A8;&#x4F5C;&#x901A;&#x77E5;-reducer" class="plugin-anchor" href="#&#xFF08;1&#xFF09;&#x89C6;&#x56FE;&#x9700;&#x8981;&#x66F4;&#x65B0;&#xFF0C;&#x8C03;&#x7528;-redux-&#x7684;-dispatch-&#x65B9;&#x6CD5;&#x5E76;&#x6307;&#x5B9A;&#x6D3E;&#x53D1;&#x52A8;&#x4F5C;&#x901A;&#x77E5;-reducer"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;&#x89C6;&#x56FE;&#x9700;&#x8981;&#x66F4;&#x65B0;&#xFF0C;&#x8C03;&#x7528; redux &#x7684; dispatch &#x65B9;&#x6CD5;&#x5E76;&#x6307;&#x5B9A;&#x6D3E;&#x53D1;&#x52A8;&#x4F5C;&#x901A;&#x77E5; Reducer</h3>
+<h3 id="&#xFF08;2&#xFF09;reducer-&#x62FF;&#x5230;&#x5F53;&#x524D;-state-&#x4E0E;-dispath-&#x65B9;&#x6CD5;&#x6D3E;&#x53D1;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;-newstate"><a name="&#xFF08;2&#xFF09;reducer-&#x62FF;&#x5230;&#x5F53;&#x524D;-state-&#x4E0E;-dispath-&#x65B9;&#x6CD5;&#x6D3E;&#x53D1;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;-newstate" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;reducer-&#x62FF;&#x5230;&#x5F53;&#x524D;-state-&#x4E0E;-dispath-&#x65B9;&#x6CD5;&#x6D3E;&#x53D1;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;-newstate"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;2&#xFF09;reducer-&#x62FF;&#x5230;&#x5F53;&#x524D;-state-&#x4E0E;-dispath-&#x65B9;&#x6CD5;&#x6D3E;&#x53D1;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;-newstate" class="plugin-anchor" href="#&#xFF08;2&#xFF09;reducer-&#x62FF;&#x5230;&#x5F53;&#x524D;-state-&#x4E0E;-dispath-&#x65B9;&#x6CD5;&#x6D3E;&#x53D1;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;-newstate"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;Reducer &#x62FF;&#x5230;&#x5F53;&#x524D; state &#x4E0E; dispath &#x65B9;&#x6CD5;&#x6D3E;&#x53D1;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; newState</h3>
+<h3 id="&#xFF08;3&#xFF09;store-&#x4E2D;&#x6570;&#x636E;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x901A;&#x8FC7;subscribe&#x65B9;&#x6CD5;&#x53D8;&#x66F4;&#x8BA2;&#x9605;&#x901A;&#x77E5;&#x9875;&#x9762;&#x66F4;&#x65B0;"><a name="&#xFF08;3&#xFF09;store-&#x4E2D;&#x6570;&#x636E;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x901A;&#x8FC7;subscribe&#x65B9;&#x6CD5;&#x53D8;&#x66F4;&#x8BA2;&#x9605;&#x901A;&#x77E5;&#x9875;&#x9762;&#x66F4;&#x65B0;" class="anchor-navigation-ex-anchor" href="#&#xFF08;3&#xFF09;store-&#x4E2D;&#x6570;&#x636E;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x901A;&#x8FC7;subscribe&#x65B9;&#x6CD5;&#x53D8;&#x66F4;&#x8BA2;&#x9605;&#x901A;&#x77E5;&#x9875;&#x9762;&#x66F4;&#x65B0;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;3&#xFF09;store-&#x4E2D;&#x6570;&#x636E;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x901A;&#x8FC7;subscribe&#x65B9;&#x6CD5;&#x53D8;&#x66F4;&#x8BA2;&#x9605;&#x901A;&#x77E5;&#x9875;&#x9762;&#x66F4;&#x65B0;" class="plugin-anchor" href="#&#xFF08;3&#xFF09;store-&#x4E2D;&#x6570;&#x636E;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x901A;&#x8FC7;subscribe&#x65B9;&#x6CD5;&#x53D8;&#x66F4;&#x8BA2;&#x9605;&#x901A;&#x77E5;&#x9875;&#x9762;&#x66F4;&#x65B0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;3&#xFF09;store &#x4E2D;&#x6570;&#x636E;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x901A;&#x8FC7;subscribe()&#x65B9;&#x6CD5;&#x53D8;&#x66F4;&#x8BA2;&#x9605;&#x901A;&#x77E5;&#x9875;&#x9762;&#x66F4;&#x65B0;</h3>
+<h2 id="4&#x3001;&#x5177;&#x4F53;&#x5B9E;&#x73B0;"><a name="4&#x3001;&#x5177;&#x4F53;&#x5B9E;&#x73B0;" class="anchor-navigation-ex-anchor" href="#4&#x3001;&#x5177;&#x4F53;&#x5B9E;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="4&#x3001;&#x5177;&#x4F53;&#x5B9E;&#x73B0;" class="plugin-anchor" href="#4&#x3001;&#x5177;&#x4F53;&#x5B9E;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>4&#x3001;&#x5177;&#x4F53;&#x5B9E;&#x73B0;</h2>
+<h3 id="&#xFF08;1&#xFF09;&#x5B9A;&#x4E49;-store-&#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF08;-redux-&#x4E2D;&#x5BFC;&#x51FA;-createstore-&#x65B9;&#x6CD5;&#xFF09;"><a name="&#xFF08;1&#xFF09;&#x5B9A;&#x4E49;-store-&#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF08;-redux-&#x4E2D;&#x5BFC;&#x51FA;-createstore-&#x65B9;&#x6CD5;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;&#x5B9A;&#x4E49;-store-&#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF08;-redux-&#x4E2D;&#x5BFC;&#x51FA;-createstore-&#x65B9;&#x6CD5;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;1&#xFF09;&#x5B9A;&#x4E49;-store-&#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF08;-redux-&#x4E2D;&#x5BFC;&#x51FA;-createstore-&#x65B9;&#x6CD5;&#xFF09;" class="plugin-anchor" href="#&#xFF08;1&#xFF09;&#x5B9A;&#x4E49;-store-&#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF08;-redux-&#x4E2D;&#x5BFC;&#x51FA;-createstore-&#x65B9;&#x6CD5;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;&#x5B9A;&#x4E49; store &#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF08; redux &#x4E2D;&#x5BFC;&#x51FA; createStore &#x65B9;&#x6CD5;&#xFF09;</h3>
+<h3 id="&#xFF08;2&#xFF09;&#x5B9A;&#x4E49;-reducer-&#xFF08;&#x5B9A;&#x4E49;state&#x521D;&#x59CB;&#x5316;&#x4FEE;&#x6539;&#x89C4;&#x5219;&#xFF09;"><a name="&#xFF08;2&#xFF09;&#x5B9A;&#x4E49;-reducer-&#xFF08;&#x5B9A;&#x4E49;state&#x521D;&#x59CB;&#x5316;&#x4FEE;&#x6539;&#x89C4;&#x5219;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;&#x5B9A;&#x4E49;-reducer-&#xFF08;&#x5B9A;&#x4E49;state&#x521D;&#x59CB;&#x5316;&#x4FEE;&#x6539;&#x89C4;&#x5219;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;2&#xFF09;&#x5B9A;&#x4E49;-reducer-&#xFF08;&#x5B9A;&#x4E49;state&#x521D;&#x59CB;&#x5316;&#x4FEE;&#x6539;&#x89C4;&#x5219;&#xFF09;" class="plugin-anchor" href="#&#xFF08;2&#xFF09;&#x5B9A;&#x4E49;-reducer-&#xFF08;&#x5B9A;&#x4E49;state&#x521D;&#x59CB;&#x5316;&#x4FEE;&#x6539;&#x89C4;&#x5219;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;&#x5B9A;&#x4E49; reducer &#xFF08;&#x5B9A;&#x4E49;state&#x521D;&#x59CB;&#x5316;&#x4FEE;&#x6539;&#x89C4;&#x5219;&#xFF09;</h3>
+<pre><code class="lang-react">import { createStore } from &apos;redux&apos;;
+
+function counterReducer(state = 0, action) {
+  console.log(&apos;state&apos;,);
+  switch (action.type) {
+    case &quot;ADD&quot;:
+      return state + 1;
+    case &quot;MINUNS&quot;:
+      return state - 1;
+    default:
+      return state;
+  }
+}
+
+const store = createStore(counterReducer);
+
+export default store;
+</code></pre>
+<h3 id="&#xFF08;3&#xFF09;storegetstate-&#x83B7;&#x53D6;&#x72B6;&#x6001;"><a name="&#xFF08;3&#xFF09;storegetstate-&#x83B7;&#x53D6;&#x72B6;&#x6001;" class="anchor-navigation-ex-anchor" href="#&#xFF08;3&#xFF09;storegetstate-&#x83B7;&#x53D6;&#x72B6;&#x6001;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;3&#xFF09;storegetstate-&#x83B7;&#x53D6;&#x72B6;&#x6001;" class="plugin-anchor" href="#&#xFF08;3&#xFF09;storegetstate-&#x83B7;&#x53D6;&#x72B6;&#x6001;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;3&#xFF09;store.getState() &#x83B7;&#x53D6;&#x72B6;&#x6001;</h3>
+<h3 id="&#xFF08;4&#xFF09;storedispatch-&#x4F20;&#x9012;action-&#x66F4;&#x65B0;&#x72B6;&#x6001;&#x3001;"><a name="&#xFF08;4&#xFF09;storedispatch-&#x4F20;&#x9012;action-&#x66F4;&#x65B0;&#x72B6;&#x6001;&#x3001;" class="anchor-navigation-ex-anchor" href="#&#xFF08;4&#xFF09;storedispatch-&#x4F20;&#x9012;action-&#x66F4;&#x65B0;&#x72B6;&#x6001;&#x3001;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;4&#xFF09;storedispatch-&#x4F20;&#x9012;action-&#x66F4;&#x65B0;&#x72B6;&#x6001;&#x3001;" class="plugin-anchor" href="#&#xFF08;4&#xFF09;storedispatch-&#x4F20;&#x9012;action-&#x66F4;&#x65B0;&#x72B6;&#x6001;&#x3001;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;4&#xFF09;store.dispatch() &#x4F20;&#x9012;action &#x66F4;&#x65B0;&#x72B6;&#x6001;&#x3001;</h3>
+<h3 id="&#xFF08;5&#xFF09;storesubscribe-&#x7EC4;&#x4EF6;&#x6E32;&#x67D3;&#x5B8C;&#x6BD5;&#x540E;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x5728;&#x56DE;&#x8C03;&#x4E2D;&#x8C03;&#x7528;-forceupdate-&#x65B9;&#x6CD5;&#x5F3A;&#x5236;&#x5237;&#x65B0;"><a name="&#xFF08;5&#xFF09;storesubscribe-&#x7EC4;&#x4EF6;&#x6E32;&#x67D3;&#x5B8C;&#x6BD5;&#x540E;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x5728;&#x56DE;&#x8C03;&#x4E2D;&#x8C03;&#x7528;-forceupdate-&#x65B9;&#x6CD5;&#x5F3A;&#x5236;&#x5237;&#x65B0;" class="anchor-navigation-ex-anchor" href="#&#xFF08;5&#xFF09;storesubscribe-&#x7EC4;&#x4EF6;&#x6E32;&#x67D3;&#x5B8C;&#x6BD5;&#x540E;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x5728;&#x56DE;&#x8C03;&#x4E2D;&#x8C03;&#x7528;-forceupdate-&#x65B9;&#x6CD5;&#x5F3A;&#x5236;&#x5237;&#x65B0;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;5&#xFF09;storesubscribe-&#x7EC4;&#x4EF6;&#x6E32;&#x67D3;&#x5B8C;&#x6BD5;&#x540E;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x5728;&#x56DE;&#x8C03;&#x4E2D;&#x8C03;&#x7528;-forceupdate-&#x65B9;&#x6CD5;&#x5F3A;&#x5236;&#x5237;&#x65B0;" class="plugin-anchor" href="#&#xFF08;5&#xFF09;storesubscribe-&#x7EC4;&#x4EF6;&#x6E32;&#x67D3;&#x5B8C;&#x6BD5;&#x540E;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x5728;&#x56DE;&#x8C03;&#x4E2D;&#x8C03;&#x7528;-forceupdate-&#x65B9;&#x6CD5;&#x5F3A;&#x5236;&#x5237;&#x65B0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;5&#xFF09;store.subscribe() &#x7EC4;&#x4EF6;&#x6E32;&#x67D3;&#x5B8C;&#x6BD5;&#x540E;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x5728;&#x56DE;&#x8C03;&#x4E2D;&#x8C03;&#x7528; forceUpdate &#x65B9;&#x6CD5;&#x5F3A;&#x5236;&#x5237;&#x65B0;</h3>
+<pre><code class="lang-react">import React, { Component } from &apos;react&apos;;
+import store from &apos;../store/index&apos;;
+
+// &#x89C6;&#x56FE;&#x9700;&#x8981;&#x66F4;&#x65B0;&#xFF0C;&#x8C03;&#x7528; redux &#x7684; dispatch &#x65B9;&#x6CD5;&#x5E76;&#x6307;&#x5B9A;&#x6D3E;&#x53D1;&#x52A8;&#x4F5C;&#x901A;&#x77E5;Reducer &#xFF0C;Reducer &#x62FF;&#x5230;&#x5F53;&#x524D; state &#x4E0E; dispath &#x65B9;&#x6CD5;&#x6D3E;&#x53D1;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; newState&#xFF0C;store&#x4E2D;&#x6570;&#x636E;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x901A;&#x8FC7;subscribe()&#x65B9;&#x6CD5;&#x53D8;&#x66F4;&#x8BA2;&#x9605;&#x901A;&#x77E5;&#x9875;&#x9762;&#x66F4;&#x65B0;
+class ReduxPage extends Component {
+  componentDidMount() {
+    store.subscribe(() =&gt; {
+      this.forceUpdate();
+    })
+  }
+  render() {
+    return &lt;div&gt;
+      &lt;div&gt;{store.getState()}&lt;/div&gt;
+      &lt;button onClick={() =&gt; store.dispatch({ type: &apos;ADD&apos; })}&gt;ADD&lt;/button&gt;
+    &lt;/div&gt;;
+  }
+}
+
+export default ReduxPage;
+</code></pre>
+<h1 id="&#x4E03;&#x3001;react-redux"><a name="&#x4E03;&#x3001;react-redux" class="anchor-navigation-ex-anchor" href="#&#x4E03;&#x3001;react-redux"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4E03;&#x3001;react-redux" class="plugin-anchor" href="#&#x4E03;&#x3001;react-redux"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E03;&#x3001;React-redux</h1>
+<h2 id="1&#x3001;&#x4F9D;&#x8D56;&#x5B89;&#x88C5;"><a name="1&#x3001;&#x4F9D;&#x8D56;&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#1&#x3001;&#x4F9D;&#x8D56;&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1&#x3001;&#x4F9D;&#x8D56;&#x5B89;&#x88C5;" class="plugin-anchor" href="#1&#x3001;&#x4F9D;&#x8D56;&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;&#x4F9D;&#x8D56;&#x5B89;&#x88C5;</h2>
+<pre><code class="lang-powershell">npm i react-redux -S
+</code></pre>
+<h2 id="2&#x3001;&#x66F4;&#x4E3A;&#x4FBF;&#x6377;&#x7684;-react-&#x7248;&#x672C;&#x7684;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x3002;"><a name="2&#x3001;&#x66F4;&#x4E3A;&#x4FBF;&#x6377;&#x7684;-react-&#x7248;&#x672C;&#x7684;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x3002;" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x66F4;&#x4E3A;&#x4FBF;&#x6377;&#x7684;-react-&#x7248;&#x672C;&#x7684;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2&#x3001;&#x66F4;&#x4E3A;&#x4FBF;&#x6377;&#x7684;-react-&#x7248;&#x672C;&#x7684;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x3002;" class="plugin-anchor" href="#2&#x3001;&#x66F4;&#x4E3A;&#x4FBF;&#x6377;&#x7684;-react-&#x7248;&#x672C;&#x7684;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x66F4;&#x4E3A;&#x4FBF;&#x6377;&#x7684; react &#x7248;&#x672C;&#x7684;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x3002;</h2>
+<h3 id="&#xFF08;1&#xFF09;provide-&#x4E3A;&#x540E;&#x4EE3;&#x7EC4;&#x4EF6;&#x63D0;&#x4F9B;store&#xFF08;&#x597D;&#x5904;&#xFF1A;&#x540E;&#x4EE3;&#x9875;&#x9762;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x5F15;&#x5165;store&#xFF09;"><a name="&#xFF08;1&#xFF09;provide-&#x4E3A;&#x540E;&#x4EE3;&#x7EC4;&#x4EF6;&#x63D0;&#x4F9B;store&#xFF08;&#x597D;&#x5904;&#xFF1A;&#x540E;&#x4EE3;&#x9875;&#x9762;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x5F15;&#x5165;store&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;provide-&#x4E3A;&#x540E;&#x4EE3;&#x7EC4;&#x4EF6;&#x63D0;&#x4F9B;store&#xFF08;&#x597D;&#x5904;&#xFF1A;&#x540E;&#x4EE3;&#x9875;&#x9762;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x5F15;&#x5165;store&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;1&#xFF09;provide-&#x4E3A;&#x540E;&#x4EE3;&#x7EC4;&#x4EF6;&#x63D0;&#x4F9B;store&#xFF08;&#x597D;&#x5904;&#xFF1A;&#x540E;&#x4EE3;&#x9875;&#x9762;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x5F15;&#x5165;store&#xFF09;" class="plugin-anchor" href="#&#xFF08;1&#xFF09;provide-&#x4E3A;&#x540E;&#x4EE3;&#x7EC4;&#x4EF6;&#x63D0;&#x4F9B;store&#xFF08;&#x597D;&#x5904;&#xFF1A;&#x540E;&#x4EE3;&#x9875;&#x9762;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x5F15;&#x5165;store&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;Provide &#x4E3A;&#x540E;&#x4EE3;&#x7EC4;&#x4EF6;&#x63D0;&#x4F9B;store&#xFF08;&#x597D;&#x5904;&#xFF1A;&#x540E;&#x4EE3;&#x9875;&#x9762;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x5F15;&#x5165;store&#xFF09;</h3>
+<h3 id="&#xFF08;2&#xFF09;connect-&#x4E3A;&#x7EC4;&#x4EF6;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x548C;&#x53D8;&#x66F4;&#x65B9;&#x6CD5;"><a name="&#xFF08;2&#xFF09;connect-&#x4E3A;&#x7EC4;&#x4EF6;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x548C;&#x53D8;&#x66F4;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;connect-&#x4E3A;&#x7EC4;&#x4EF6;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x548C;&#x53D8;&#x66F4;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;2&#xFF09;connect-&#x4E3A;&#x7EC4;&#x4EF6;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x548C;&#x53D8;&#x66F4;&#x65B9;&#x6CD5;" class="plugin-anchor" href="#&#xFF08;2&#xFF09;connect-&#x4E3A;&#x7EC4;&#x4EF6;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x548C;&#x53D8;&#x66F4;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;connect &#x4E3A;&#x7EC4;&#x4EF6;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x548C;&#x53D8;&#x66F4;&#x65B9;&#x6CD5;</h3>
+<ul>
+<li>&#x9AD8;&#x9636;&#x7EC4;&#x4EF6;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x6620;&#x5C04; state&#x3001;dispatch to  props</li>
+<li>&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x63A5;&#x6536;&#x5F53;&#x524D;&#x7EC4;&#x4EF6;</li>
+</ul>
+<h2 id="3&#x3001;&#x4F7F;&#x7528;reducer"><a name="3&#x3001;&#x4F7F;&#x7528;reducer" class="anchor-navigation-ex-anchor" href="#3&#x3001;&#x4F7F;&#x7528;reducer"><i class="fa fa-link" aria-hidden="true"></i></a><a name="3&#x3001;&#x4F7F;&#x7528;reducer" class="plugin-anchor" href="#3&#x3001;&#x4F7F;&#x7528;reducer"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;&#x4F7F;&#x7528;reducer</h2>
+<h3 id="&#xFF08;1&#xFF09;&#x5B9A;&#x4E49;reducer"><a name="&#xFF08;1&#xFF09;&#x5B9A;&#x4E49;reducer" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;&#x5B9A;&#x4E49;reducer"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;1&#xFF09;&#x5B9A;&#x4E49;reducer" class="plugin-anchor" href="#&#xFF08;1&#xFF09;&#x5B9A;&#x4E49;reducer"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;&#x5B9A;&#x4E49;reducer</h3>
+<pre><code class="lang-tsx">// store/index.ts
+import { createStore } from &apos;redux&apos;;
+
+function counterReducer(state = 0, action) {
+  console.log(&apos;state&apos;,);
+  switch (action.type) {
+    case &quot;ADD&quot;:
+      return state + 1;
+    case &quot;MINUNS&quot;:
+      return state - 1;
+    default:
+      return state;
+  }
+}
+
+const store = createStore(counterReducer);
+
+export default store;
+</code></pre>
+<h3 id="&#xFF08;2&#xFF09;&#x9875;&#x9762;&#x5E94;&#x7528;"><a name="&#xFF08;2&#xFF09;&#x9875;&#x9762;&#x5E94;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;&#x9875;&#x9762;&#x5E94;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;2&#xFF09;&#x9875;&#x9762;&#x5E94;&#x7528;" class="plugin-anchor" href="#&#xFF08;2&#xFF09;&#x9875;&#x9762;&#x5E94;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;&#x9875;&#x9762;&#x5E94;&#x7528;</h3>
+<pre><code class="lang-tsx">import React, { Component } from &apos;react&apos;;
+import { connect } from &apos;react-redux&apos;;
+
+export default connect(
+  // mapStateToProps &#x628A; state &#x6620;&#x5C04;&#x5230; props
+  state =&gt; ({ num: state }),
+  // mapDispathToProps &#x628A; dispath &#x6620;&#x5C04;&#x5230; props
+  {
+    add: () =&gt; ({type: &quot;ADD&quot;})
+  }
+)(class ReactReduxPage extends Component {
+  render() {
+    // const { num, dispatch } = this.props;
+    const { num, add } = this.props;
+    return &lt;div&gt;
+      &lt;div&gt;{num}&lt;/div&gt;
+      &lt;button onClick={() =&gt; add({ type: &apos;ADD&apos; })}&gt;ADD&lt;/button&gt;
+    &lt;/div&gt;;
+  }
+})
+</code></pre>
+<h1 id="&#x516B;&#x3001;react-router"><a name="&#x516B;&#x3001;react-router" class="anchor-navigation-ex-anchor" href="#&#x516B;&#x3001;react-router"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x516B;&#x3001;react-router" class="plugin-anchor" href="#&#x516B;&#x3001;react-router"><i class="fa fa-link" aria-hidden="true"></i></a>&#x516B;&#x3001;React-router</h1>
+<h2 id="1&#x3001;&#x5B89;&#x88C5;"><a name="1&#x3001;&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#1&#x3001;&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1&#x3001;&#x5B89;&#x88C5;" class="plugin-anchor" href="#1&#x3001;&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;&#x5B89;&#x88C5;</h2>
+<pre><code class="lang-powershell">npm i react-router-dom -S
+</code></pre>
+<h2 id="2&#x3001;raect-router-&#x4ECB;&#x7ECD;"><a name="2&#x3001;raect-router-&#x4ECB;&#x7ECD;" class="anchor-navigation-ex-anchor" href="#2&#x3001;raect-router-&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2&#x3001;raect-router-&#x4ECB;&#x7ECD;" class="plugin-anchor" href="#2&#x3001;raect-router-&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;Raect-router &#x4ECB;&#x7ECD;</h2>
+<h3 id="&#xFF08;1&#xFF09;reatc-router-&#x63D0;&#x4F9B;&#x6700;&#x57FA;&#x672C;&#x7684;&#x8DEF;&#x7531;&#x529F;&#x80FD;"><a name="&#xFF08;1&#xFF09;reatc-router-&#x63D0;&#x4F9B;&#x6700;&#x57FA;&#x672C;&#x7684;&#x8DEF;&#x7531;&#x529F;&#x80FD;" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;reatc-router-&#x63D0;&#x4F9B;&#x6700;&#x57FA;&#x672C;&#x7684;&#x8DEF;&#x7531;&#x529F;&#x80FD;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;1&#xFF09;reatc-router-&#x63D0;&#x4F9B;&#x6700;&#x57FA;&#x672C;&#x7684;&#x8DEF;&#x7531;&#x529F;&#x80FD;" class="plugin-anchor" href="#&#xFF08;1&#xFF09;reatc-router-&#x63D0;&#x4F9B;&#x6700;&#x57FA;&#x672C;&#x7684;&#x8DEF;&#x7531;&#x529F;&#x80FD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;reatc-router &#x63D0;&#x4F9B;&#x6700;&#x57FA;&#x672C;&#x7684;&#x8DEF;&#x7531;&#x529F;&#x80FD;</h3>
+<h3 id="&#xFF08;2&#xFF09;react-router-dom-&#x4F9D;&#x8D56;-reatc-router-&#x6240;&#x4EE5;&#x5B89;&#x88C5;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x4F1A;&#x81EA;&#x52A8;&#x5B89;&#x88C5;"><a name="&#xFF08;2&#xFF09;react-router-dom-&#x4F9D;&#x8D56;-reatc-router-&#x6240;&#x4EE5;&#x5B89;&#x88C5;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x4F1A;&#x81EA;&#x52A8;&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;react-router-dom-&#x4F9D;&#x8D56;-reatc-router-&#x6240;&#x4EE5;&#x5B89;&#x88C5;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x4F1A;&#x81EA;&#x52A8;&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;2&#xFF09;react-router-dom-&#x4F9D;&#x8D56;-reatc-router-&#x6240;&#x4EE5;&#x5B89;&#x88C5;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x4F1A;&#x81EA;&#x52A8;&#x5B89;&#x88C5;" class="plugin-anchor" href="#&#xFF08;2&#xFF09;react-router-dom-&#x4F9D;&#x8D56;-reatc-router-&#x6240;&#x4EE5;&#x5B89;&#x88C5;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x4F1A;&#x81EA;&#x52A8;&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;react-router-dom &#x4F9D;&#x8D56; reatc-router &#x6240;&#x4EE5;&#x5B89;&#x88C5;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x4F1A;&#x81EA;&#x52A8;&#x5B89;&#x88C5;</h3>
+<h2 id="3&#x3001;route-&#x5339;&#x914D;-location-&#x4E0E;-component-&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;"><a name="3&#x3001;route-&#x5339;&#x914D;-location-&#x4E0E;-component-&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;" class="anchor-navigation-ex-anchor" href="#3&#x3001;route-&#x5339;&#x914D;-location-&#x4E0E;-component-&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="3&#x3001;route-&#x5339;&#x914D;-location-&#x4E0E;-component-&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;" class="plugin-anchor" href="#3&#x3001;route-&#x5339;&#x914D;-location-&#x4E0E;-component-&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;Route &#x5339;&#x914D; location &#x4E0E; component &#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;</h2>
+<h3 id="&#xFF08;1&#xFF09;&#x4E09;&#x79CD;&#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x4E92;&#x65A5;"><a name="&#xFF08;1&#xFF09;&#x4E09;&#x79CD;&#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x4E92;&#x65A5;" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;&#x4E09;&#x79CD;&#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x4E92;&#x65A5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;1&#xFF09;&#x4E09;&#x79CD;&#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x4E92;&#x65A5;" class="plugin-anchor" href="#&#xFF08;1&#xFF09;&#x4E09;&#x79CD;&#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x4E92;&#x65A5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;&#x4E09;&#x79CD;&#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x4E92;&#x65A5;</h3>
+<ul>
+<li>&#x4F18;&#x5148;&#x7EA7; children &gt; component &gt; render</li>
+</ul>
+<h3 id="&#xFF08;2&#xFF09;children-&#x6E32;&#x67D3;&#x4E0E;-location-&#x65E0;&#x5173;&#xFF0C;&#x5176;&#x4ED6;&#x4E24;&#x79CD;&#x90FD;&#x4E0E;location&#x6709;&#x5173;"><a name="&#xFF08;2&#xFF09;children-&#x6E32;&#x67D3;&#x4E0E;-location-&#x65E0;&#x5173;&#xFF0C;&#x5176;&#x4ED6;&#x4E24;&#x79CD;&#x90FD;&#x4E0E;location&#x6709;&#x5173;" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;children-&#x6E32;&#x67D3;&#x4E0E;-location-&#x65E0;&#x5173;&#xFF0C;&#x5176;&#x4ED6;&#x4E24;&#x79CD;&#x90FD;&#x4E0E;location&#x6709;&#x5173;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;2&#xFF09;children-&#x6E32;&#x67D3;&#x4E0E;-location-&#x65E0;&#x5173;&#xFF0C;&#x5176;&#x4ED6;&#x4E24;&#x79CD;&#x90FD;&#x4E0E;location&#x6709;&#x5173;" class="plugin-anchor" href="#&#xFF08;2&#xFF09;children-&#x6E32;&#x67D3;&#x4E0E;-location-&#x65E0;&#x5173;&#xFF0C;&#x5176;&#x4ED6;&#x4E24;&#x79CD;&#x90FD;&#x4E0E;location&#x6709;&#x5173;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;children &#x6E32;&#x67D3;&#x4E0E; location &#x65E0;&#x5173;&#xFF0C;&#x5176;&#x4ED6;&#x4E24;&#x79CD;&#x90FD;&#x4E0E;location&#x6709;&#x5173;</h3>
+<h3 id="&#xFF08;3&#xFF09;switch-&#x72EC;&#x5360;&#x8DEF;&#x7531;&#xFF0C;&#x53EA;&#x4F1A;&#x6E32;&#x67D3;&#x4E00;&#x4E2A;"><a name="&#xFF08;3&#xFF09;switch-&#x72EC;&#x5360;&#x8DEF;&#x7531;&#xFF0C;&#x53EA;&#x4F1A;&#x6E32;&#x67D3;&#x4E00;&#x4E2A;" class="anchor-navigation-ex-anchor" href="#&#xFF08;3&#xFF09;switch-&#x72EC;&#x5360;&#x8DEF;&#x7531;&#xFF0C;&#x53EA;&#x4F1A;&#x6E32;&#x67D3;&#x4E00;&#x4E2A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#xFF08;3&#xFF09;switch-&#x72EC;&#x5360;&#x8DEF;&#x7531;&#xFF0C;&#x53EA;&#x4F1A;&#x6E32;&#x67D3;&#x4E00;&#x4E2A;" class="plugin-anchor" href="#&#xFF08;3&#xFF09;switch-&#x72EC;&#x5360;&#x8DEF;&#x7531;&#xFF0C;&#x53EA;&#x4F1A;&#x6E32;&#x67D3;&#x4E00;&#x4E2A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;3&#xFF09;switch &#x72EC;&#x5360;&#x8DEF;&#x7531;&#xFF0C;&#x53EA;&#x4F1A;&#x6E32;&#x67D3;&#x4E00;&#x4E2A;</h3>
+<ul>
+<li>&#x914D;&#x5408;&#x5199;&#x5728;&#x6700;&#x540E;&#x7684;Route&#x7EC4;&#x4EF6;&#x5E76;&#x4E14;&#x6CA1;&#x6709;path&#xFF0C;&#x5B9E;&#x73B0;404&#x9875;&#x9762;</li>
+</ul>
+<pre><code class="lang-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { BrowserRouter <span class="hljs-keyword">as</span> Router, Route, Link, Switch } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-router-dom&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RouterPage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+        &lt;div&gt;
+            &lt;Router&gt;
+                // link &#x8DEF;&#x7531;&#x8DF3;&#x8F6C;
+                // Route &#x5339;&#x914D;location&#x4E0E;component&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;
+                &lt;Link to=&quot;/&quot;&gt;&#x9996;&#x9875;&lt;/Link&gt;
+                &lt;Link to=&quot;/user&quot;&gt;&#x7528;&#x6237;&#x4E2D;&#x5FC3;&lt;/Link&gt;
+
+                &lt;Switch&gt;
+                    // &#x4E09;&#x79CD;&#x6E32;&#x67D3;&#x65B9;&#x5F0F;&#x4E92;&#x65A5;&#xFF0C;&#x4F18;&#x5148;&#x7EA7; children &gt; component &gt; render
+                    // children &#x6E32;&#x67D3;&#x4E0E; location &#x65E0;&#x5173;&#xFF0C;&#x5176;&#x4ED6;&#x4E24;&#x79CD;&#x90FD;&#x4E0E; location &#x6709;&#x5173;
+                    &lt;Route
+                        exact
+                        path=&quot;/&quot;
+                        component={HomePage}
+                        children={() =&gt; &lt;div&gt;children&lt;/div&gt;}
+                        render={() =&gt; &lt;div&gt;render&lt;/div&gt;}
+                    /&gt;
+                    &lt;Route path=&quot;/user&quot; component={UserPage} /&gt;
+                    // &#x5199;&#x5728;&#x6700;&#x540E;&#xFF0C;&#x5E76;&#x4E14;&#x642D;&#x914D; switch &#x4F7F;&#x7528;
+                    &lt;Route component={EmptyPage} /&gt;
+                &lt;/Switch&gt;
+            &lt;/Router&gt;
+        &lt;/div&gt;
+    );
+  }
+}
+
+class HomePage extends Component {
+  render() {
+    return &lt;div&gt;&#x9996;&#x9875;&lt;/div&gt;
+  }
+}
+
+class UserPage extends Component {
+  render() {
+    return &lt;div&gt;&#x7528;&#x6237;&#x4E2D;&#x5FC3;&lt;/div&gt;
+  }
+}
+
+class EmptyPage extends Component {
+  render() {
+    return &lt;div&gt;404&lt;/div&gt;
+  }
+}
+</code></pre>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">File Modify: 
+2024-10-31 12:56:12
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: React">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02-react组件化.html" class="navigation navigation-next " aria-label="Next page: 二、React 组件化">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"一、React 基础","level":"2.2.1","depth":2,"next":{"title":"二、React 组件化","level":"2.2.2","depth":2,"path":"book/web/react/02-react组件化.md","ref":"book/web/react/02-react组件化.md","articles":[]},"previous":{"title":"React","level":"2.2","depth":1,"path":"book/web/react/README.md","ref":"book/web/react/README.md","articles":[{"title":"一、React 基础","level":"2.2.1","depth":2,"path":"book/web/react/01-react基础.md","ref":"book/web/react/01-react基础.md","articles":[]},{"title":"二、React 组件化","level":"2.2.2","depth":2,"path":"book/web/react/02-react组件化.md","ref":"book/web/react/02-react组件化.md","articles":[]},{"title":"三、React-Redux 源码","level":"2.2.3","depth":2,"path":"book/web/react/03-react-redux源码.md","ref":"book/web/react/03-react-redux源码.md","articles":[]},{"title":"四、React 虚拟 Dom","level":"2.2.4","depth":2,"path":"book/web/react/04-react虚拟dom.md","ref":"book/web/react/04-react虚拟dom.md","articles":[]},{"title":"五、React hook","level":"2.2.5","depth":2,"path":"book/web/react/05-react-hook.md","ref":"book/web/react/05-react-hook.md","articles":[]},{"title":"六、React CRA 项目搭建","level":"2.2.6","depth":2,"path":"book/web/react/06-cra项目搭建.md","ref":"book/web/react/06-cra项目搭建.md","articles":[]},{"title":"七、React性能优化","level":"2.2.7","depth":2,"path":"book/web/react/07-性能优化.md","ref":"book/web/react/07-性能优化.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search","search-plus","github","-sharing","sharing-plus","tbfed-pagefooter","expandable-chapters-small","advanced-emoji","github-buttons","donate","anchors","anchor-navigation-ex","copy-code-button","theme-comscore","livereload"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{},"disqus":{"useIdentifier":false,"shortName":"gitbook"},"github":{"url":"https://github.com/liuyav/gitbook"},"livereload":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"title":"","button":"赏","wechat":"https://zhangjikai.com/resource/weixin.png","alipay":"https://zhangjikai.com/resource/alipay.png","wechatText":"微信打赏","alipayText":"支付宝打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"theme-comscore":{},"github-buttons":{"repo":"zhangjikai/gitbook-use","types":["star","watch","fork"],"size":"small"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":false,"tbfed-pagefooter":{"copyright":"Copyright &copy zhangjikai.com 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"liuyav","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"web笔记","language":"zh-hans","links":{"sidebar":{"个人首页":"http://liuyav.com"}},"gitbook":"*","description":"web开发笔记"},"file":{"path":"book/web/react/01-react基础.md","mtime":"2024-10-31T04:56:12.151Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-31T04:56:30.496Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
